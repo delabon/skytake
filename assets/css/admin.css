@@ -1,0 +1,101 @@
+/*** CUSTOM ****/
+
+.column-name .button{
+	margin-bottom: 5px;
+}
+
+/** New Campaign Lightbox **/
+.skytake-new-campaign{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 9999;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.skytake-new-campaign-box{
+	position: relative;
+	flex-basis: 600px;
+	max-width: 100%;
+	background-color: white;
+}
+
+.skytake-new-campaign-box > header{
+	padding: 20px 20px 0;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.skytake-new-campaign-box > header .dlb_input_wrapper{
+	margin-bottom: 0;
+	border-bottom: 0 !important;
+}
+
+.skytake-new-campaign-box > section{
+	padding: 20px;
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.skytake-new-campaign-box .dlb_input_wrapper {
+	border-bottom: 0 !important;
+}
+
+.skytake-new-campaign-box .dlb_input_radio_images{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.skytake-new-campaign-box .dlb_input_radio_images img{
+	display: block;
+	max-width: 100%;
+}
+
+.skytake-new-campaign-box .dlb_input_radio_images label{
+	flex-basis: 47%;
+	max-width: 47%;
+	margin-bottom: 15px;
+}
+
+/** Tags **/
+.skytake_tag {
+	padding: 2px 7px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	font-size: 12px;
+	display: inline-flex;
+	align-items: center;
+	border-radius: 5px;
+	white-space: nowrap;
+}
+
+.skytake_tag.__purple{
+	background: purple;
+	color: white;
+}
+
+.skytake_tag.__yellow{
+	background: #FFE01B;
+	color: black;
+}
+
+.skytake_tag.__red{
+	background: #e74c3c;
+	color: white;
+}
+
+.skytake_tag.__green{
+	background: #1ec463;
+	color: white;
+}
+
+/** list table **/
+.dlb_list_table .column-c_status{
+	width: 15%;
+}

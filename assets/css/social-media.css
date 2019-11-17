@@ -1,0 +1,79 @@
+/*
+  Flaticon icon font: Flaticon
+  Creation date: 25/07/2019 07:19
+*/
+
+@font-face {
+  font-family: "DLBICONS";
+  src: url("./social-media/social.eot");
+  src: url("./social-media/social.eot?#iefix") format("embedded-opentype"),
+       url("./social-media/social.woff") format("woff"),
+       url("./social-media/social.ttf") format("truetype"),
+       url("./social-media/social.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "DLBICONS";
+    src: url("./social-media/social.svg#Flaticon") format("svg");
+  }
+}
+
+[class*="dlbicons"]{
+  position: relative;
+  font-size: 20px;
+}
+
+[class^="dlbicons-"]:before, 
+[class*="dlbicons-"]:before,
+[class^="dlbicons-"]:after, 
+[class*="dlbicons-"]:after {   
+  font-family: DLBICONS;
+  font-size: inherit;
+  font-style: normal;
+}
+
+.dlbicons-facebook:before { content: "\f101"; }
+.dlbicons-facebook-square:before { content: "\f102"; }
+.dlbicons-facebook-circle:before { content: "\f100"; }
+.dlbicons-facebook-small-radius:before { content: "\f103"; }
+.dlbicons-facebook-big-radius:before { content: "\f104"; }
+
+.dlbicons-twitter:before { content: "\f107"; }
+.dlbicons-twitter-square:before { content: "\f108"; }
+.dlbicons-twitter-small-radius:before { content: "\f10a"; }
+.dlbicons-twitter-big-radius:before { content: "\f10b"; }
+.dlbicons-twitter-circle:before { content: "\f106"; }
+
+.dlbicons-pinterest:before { content: "\f10c"; }
+.dlbicons-pinterest-square:before { content: "\f110"; }
+.dlbicons-pinterest-small-radius:before { content: "\f111"; }
+.dlbicons-pinterest-big-radius:before { content: "\f112"; }
+.dlbicons-pinterest-circle:before { content: "\f10e"; }
+
+.dlbicons-youtube:before { content: "\f13a"; }
+.dlbicons-youtube-square:before { content: "\f13c"; }
+.dlbicons-youtube-small-radius:before { content: "\f13e"; }
+.dlbicons-youtube-big-radius:before { content: "\f13f"; }
+.dlbicons-youtube-circle:before { content: "\f13b"; }
+
+.dlbicons-linkedin:before { content: "\f134"; }
+.dlbicons-linkedin-square:before { content: "\f136"; }
+.dlbicons-linkedin-small-radius:before { content: "\f137"; }
+.dlbicons-linkedin-big-radius:before { content: "\f138"; }
+.dlbicons-linkedin-circle:before { content: "\f135"; }
+
+.dlbicons-instagram:before { content: "\f115"; }
+.dlbicons-instagram-square:before { content: "\f117"; }
+.dlbicons-instagram-small-radius:before { content: "\f118"; }
+.dlbicons-instagram-big-radius:before { content: "\f119"; }
+.dlbicons-instagram-circle:before { content: "\f113"; }
+
+.dlbicons-dribbble:before { content: "\f11b"; }
+.dlbicons-dribbble-square:before { content: "\f11d"; }
+.dlbicons-dribbble-small-radius:before { content: "\f11e"; }
+.dlbicons-dribbble-big-radius:before { content: "\f11f"; }
+.dlbicons-dribble-circle:before { content: "\f11c"; }
+

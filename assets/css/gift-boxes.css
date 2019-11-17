@@ -1,0 +1,51 @@
+/*
+  Flaticon icon font: Flaticon
+  Creation date: 29/07/2019 14:17
+*/
+
+@font-face {
+  font-family: "DLBICONSGIFT";
+  src: url("./gift-boxes/icons.eot");
+  src: url("./gift-boxes/icons.eot?#iefix") format("embedded-opentype"),
+       url("./gift-boxes/icons.woff2") format("woff2"),
+       url("./gift-boxes/icons.woff") format("woff"),
+       url("./gift-boxes/icons.ttf") format("truetype"),
+       url("./gift-boxes/icons.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "DLBICONSGIFT";
+    src: url("./gift-boxes/icons.svg#Flaticon") format("svg");
+  }
+}
+
+[class*="dlbgifticon"]{
+  font-size: 20px;
+}
+
+[class^="dlbgifticon-"]:before, 
+[class*="dlbgifticon-"]:before,
+[class^="dlbgifticon-"]:after, 
+[class*="dlbgifticon-"]:after {   
+  font-family: DLBICONSGIFT;
+  font-size: inherit;
+  font-style: normal;
+}
+
+.dlbgifticon-1:before { content: "\f100"; }
+.dlbgifticon-2:before { content: "\f101"; }
+.dlbgifticon-3:before { content: "\f102"; }
+.dlbgifticon-4:before { content: "\f103"; }
+.dlbgifticon-5:before { content: "\f104"; }
+.dlbgifticon-6:before { content: "\f105"; }
+.dlbgifticon-7:before { content: "\f106"; }
+.dlbgifticon-8:before { content: "\f107"; }
+.dlbgifticon-9:before { content: "\f108"; }
+.dlbgifticon-10:before { content: "\f109"; }
+.dlbgifticon-11:before { content: "\f10a"; }
+.dlbgifticon-12:before { content: "\f10b"; }
+.dlbgifticon-13:before { content: "\f10c"; }
+.dlbgifticon-14:before { content: "\f10d"; }

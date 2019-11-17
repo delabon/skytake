@@ -1,0 +1,21 @@
+.skytake-container{
+    left: auto;
+    right: 50%;
+    -webkit-transform: translate( 50%, -50% );
+            transform: translate( 50%, -50% );
+}
+
+.skytake-container.__top_zero{
+    -webkit-transform: translate( 50%, 0 );
+            transform: translate( 50%, 0 );
+}
+
+.skytake-form-more[data-count="2"] #skytake-mobile {
+    margin-right: 7px;
+    margin-left: 0;
+}
+
+.skytake-form-more[data-count="2"] #skytake-name {
+    margin-left: 7px;
+    margin-right: 0;
+}

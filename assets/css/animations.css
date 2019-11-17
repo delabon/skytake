@@ -1,0 +1,307 @@
+/*****************************************************
+ * Animations
+*****************************************************/
+@keyframes skytakeSpin { 
+    100% { 
+        transform:rotate(360deg); 
+    } 
+}
+
+@keyframes skytake_loader {
+    0% { 
+        transform: scale(0);
+        opacity: 0;
+    } 
+    
+    100% { 
+        opacity: 0.8;
+        transform: scale(1);
+    }
+}
+
+/** None no animation (fast)**/
+.skytake{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skytake.__show{
+    opacity: 1;
+    visibility: visible;
+}
+
+/** Fade In **/
+.skytake-popup[data-animation="fade"] .skytake-container{
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skytake-popup[data-animation="fade"].__show .skytake-container{
+    opacity: 1;
+    visibility: visible;
+}
+
+.skytake-floating-bar[data-animation="fade"]{
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skytake-floating-bar[data-animation="fade"].__show{
+    opacity: 1;
+    visibility: visible;
+}
+
+.skytake-scroll-box[data-animation="fade"]{
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skytake-scroll-box[data-animation="fade"].__show{
+    opacity: 1;
+    visibility: visible;
+}
+
+/** Scale Out **/
+.skytake-popup[data-animation="scale"] .skytake-container{
+    transition: all 500ms ease;
+    transform: scale(0);
+}
+
+.skytake-popup[data-animation="scale"].__show .skytake-container{
+    transform: scale(1);
+}
+
+.skytake-floating-bar[data-animation="scale"]{
+    transition: all 500ms ease;
+    transform: scale(0);
+}
+
+.skytake-floating-bar[data-animation="scale"].__show{
+    transform: scale(1);
+}
+
+.skytake-scroll-box[data-animation="scale"]{
+    transition: all 500ms ease;
+    transform: scale(0);
+}
+
+.skytake-scroll-box[data-animation="scale"].__show{
+    transform: scale(1);
+}
+
+/** Scale In **/
+.skytake-popup[data-animation="scale_in"] .skytake-container{
+    transition: all 500ms ease;
+    transform: scale(1.5);
+}
+
+.skytake-popup[data-animation="scale_in"].__show .skytake-container{
+    transform: scale(1);
+}
+
+.skytake-floating-bar[data-animation="scale_in"]{
+    transition: all 500ms ease;
+    transform: scale(1.5);
+}
+
+.skytake-floating-bar[data-animation="scale_in"].__show{
+    transform: scale(1);
+}
+
+.skytake-scroll-box[data-animation="scale_in"]{
+    transition: all 500ms ease;
+    transform: scale(1.5);
+}
+
+.skytake-scroll-box[data-animation="scale_in"].__show{
+    transform: scale(1);
+}
+
+/** Slide Top **/
+.skytake-popup[data-animation="slide_top"] .skytake-container{
+    transition: all 500ms ease;
+    transform: translate( 0, -100% );
+}
+
+.skytake-popup[data-animation="slide_top"].__show .skytake-container{
+    transform: translate( 0, 0 );
+}
+
+.skytake-floating-bar[data-animation="slide_top"]{
+    transition: all 500ms ease;
+    transform: translate( 0, -100% );
+}
+
+.skytake-floating-bar[data-animation="slide_top"].__show{
+    transform: translate( 0, 0 );
+}
+
+.skytake-scroll-box[data-animation="slide_top"]{
+    transition: all 500ms ease;
+    transform: translate( 0, -100% );
+}
+
+.skytake-scroll-box[data-animation="slide_top"].__show{
+    transform: translate( 0, 0 );
+}
+
+/** Slide Bottom **/
+.skytake-popup[data-animation="slide_bottom"] .skytake-container{
+    transition: all 500ms ease;
+    transform: translate( 0, 100% );
+}
+
+.skytake-popup[data-animation="slide_bottom"].__show .skytake-container{
+    transform: translate( 0, 0 );
+}
+
+.skytake-floating-bar[data-animation="slide_bottom"]{
+    transition: all 500ms ease;
+    transform: translate( 0, 100% );
+}
+
+.skytake-floating-bar[data-animation="slide_bottom"].__show{
+    transform: translate( 0, 0 );
+}
+
+.skytake-scroll-box[data-animation="slide_bottom"]{
+    transition: all 500ms ease;
+    transform: translate( 0, 100% );
+}
+
+.skytake-scroll-box[data-animation="slide_bottom"].__show{
+    transform: translate( 0, 0 );
+}
+
+/** Slide Right **/
+.skytake-popup[data-animation="slide_right"] .skytake-container{
+    transition: all 500ms ease;
+    transform: translate( 100%, 0 );
+}
+
+.skytake-popup[data-animation="slide_right"].__show .skytake-container{
+    transform: translate( 0, 0 );
+}
+
+.skytake-floating-bar[data-animation="slide_right"]{
+    transition: all 500ms ease;
+    transform: translate( 100%, 0 );
+}
+
+.skytake-floating-bar[data-animation="slide_right"].__show{
+    transform: translate( 0, 0 );
+}
+
+.skytake-scroll-box[data-animation="slide_right"]{
+    transition: all 500ms ease;
+    transform: translate( 100%, 0 );
+}
+
+.skytake-scroll-box[data-animation="slide_right"].__show{
+    transform: translate( 0, 0 );
+}
+
+/** Slide Left **/
+.skytake-popup[data-animation="slide_left"] .skytake-container{
+    transition: all 500ms ease;
+    transform: translate( -100%, 0 );
+}
+
+.skytake-popup[data-animation="slide_left"].__show .skytake-container{
+    transform: translate( 0, 0 );
+}
+
+.skytake-floating-bar[data-animation="slide_left"]{
+    transition: all 500ms ease;
+    transform: translate( -100%, 0 );
+}
+
+.skytake-floating-bar[data-animation="slide_left"].__show{
+    transform: translate( 0, 0 );
+}
+
+.skytake-scroll-box[data-animation="slide_left"]{
+    transition: all 500ms ease;
+    transform: translate( -100%, 0 );
+}
+
+.skytake-scroll-box[data-animation="slide_left"].__show{
+    transform: translate( 0, 0 );
+}
+
+/** Spin **/
+.skytake-popup[data-animation="spin"] .skytake-container{
+    transition: all 500ms ease;
+    transform: rotate( 70deg );
+}
+
+.skytake-popup[data-animation="spin"].__show .skytake-container{
+    transform: rotate( 360deg );
+}
+
+/** 3D: Rotate from top**/
+.skytake-popup[data-animation="3d_rotate_top"] .skytake-container{
+    transform-style: preserve-3d;
+    transform: translateY(-100%) rotateX(-90deg);
+    transform-origin: 0 100%;
+	transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skytake-popup[data-animation="3d_rotate_top"].__show .skytake-container{
+	transform: translateY(0%) rotateX(0deg);
+    opacity: 1;
+    visibility: visible;
+}
+
+/** 3D: Rotate from bottom**/
+.skytake-popup[data-animation="3d_rotate_bottom"] .skytake-container{
+    transform-style: preserve-3d;
+    transform: translateY(100%) rotateX(90deg);
+    transform-origin: 0 100%;
+	transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skytake-popup[data-animation="3d_rotate_bottom"].__show .skytake-container{
+	transform: translateY(0%) rotateX(0deg);
+    opacity: 1;
+    visibility: visible;
+}
+
+/** 3D: Rotate from left**/
+.skytake-popup[data-animation="3d_rotate_left"] .skytake-container{
+    transform-style: preserve-3d;
+    transform: translateX(-100%) rotateY(-90deg);
+    transform-origin: 0 100%;
+	transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skytake-popup[data-animation="3d_rotate_left"].__show .skytake-container{
+	transform: translateX(0%) rotateY(0deg);
+    opacity: 1;
+    visibility: visible;
+}
+
+/** 3D: Rotate from right**/
+.skytake-popup[data-animation="3d_rotate_right"] .skytake-container{
+    transform-style: preserve-3d;
+    transform: translateX(100%) rotateY(90deg);
+    transform-origin: 0 100%;
+	transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skytake-popup[data-animation="3d_rotate_right"].__show .skytake-container{
+	transform: translateX(0%) rotateY(0deg);
+    opacity: 1;
+    visibility: visible;
+}

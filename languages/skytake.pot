@@ -1,0 +1,1037 @@
+# Copyright (C) 2019 Delabon.com
+# This file is distributed under the same license as the Skytake Leads & Sales plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Skytake Leads & Sales 0.19.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/skytake\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-10-16T07:37:23+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.2.0\n"
+"X-Domain: skytake\n"
+
+#. Plugin Name of the plugin
+msgid "Skytake Leads & Sales"
+msgstr ""
+
+#. Description of the plugin
+msgid "Increase your leads & sales today!"
+msgstr ""
+
+#. Author of the plugin
+msgid "Delabon.com"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://delabon.com"
+msgstr ""
+
+#: lib/class-subscriber-list-table.php:13
+msgid "Subscriber"
+msgstr ""
+
+#: lib/class-subscriber-list-table.php:14
+#: lib/class-backend.php:152
+#: lib/class-backend.php:153
+#: lib/class-backend.php:271
+msgid "Subscribers"
+msgstr ""
+
+#: lib/class-subscriber-list-table.php:69
+msgid "Email"
+msgstr ""
+
+#: lib/class-subscriber-list-table.php:70
+msgid "Name/Mobile"
+msgstr ""
+
+#: lib/class-subscriber-list-table.php:71
+msgid "Coupon code"
+msgstr ""
+
+#: lib/class-subscriber-list-table.php:72
+msgid "Date"
+msgstr ""
+
+#: lib/views/tabs/filters.php:16
+msgid "Logged-in users"
+msgstr ""
+
+#: lib/views/tabs/filters.php:18
+msgid "Enable to show coupon popup for all logged-in users"
+msgstr ""
+
+#: lib/views/tabs/filters.php:19
+#: lib/views/tabs/filters.php:27
+#: lib/views/tabs/filters.php:33
+#: lib/views/tabs/woocommerce.php:41
+#: lib/views/tabs/email.php:21
+#: lib/views/tabs/mailchimp.php:41
+#: lib/views/tabs/mailchimp.php:65
+msgid "Enable"
+msgstr ""
+
+#: lib/views/tabs/filters.php:24
+msgid "Administrator"
+msgstr ""
+
+#: lib/views/tabs/filters.php:26
+msgid "Enable to show coupon popup for administrator(s)"
+msgstr ""
+
+#: lib/views/tabs/filters.php:32
+msgid "Hide on all articles"
+msgstr ""
+
+#: lib/views/tabs/filters.php:39
+msgid "Show / Hide on all pages"
+msgstr ""
+
+#: lib/views/tabs/filters.php:40
+msgid "Add the pages exluded below."
+msgstr ""
+
+#: lib/views/tabs/filters.php:44
+msgid "Show"
+msgstr ""
+
+#: lib/views/tabs/filters.php:45
+#: lib/skins/tmpl-popup-default.php:60
+msgid "Hide"
+msgstr ""
+
+#: lib/views/tabs/filters.php:50
+msgid "Pages Excluded"
+msgstr ""
+
+#: lib/views/tabs/filters.php:51
+msgid "Add the excluded pages URL's here. ex:"
+msgstr ""
+
+#: lib/views/tabs/filters.php:64
+#: lib/views/tabs/woocommerce.php:64
+#: lib/views/tabs/urgency.php:118
+#: lib/views/tabs/email.php:49
+#: lib/views/tabs/mailchimp.php:82
+#: lib/views/tabs/general.php:106
+#: lib/views/template_editor/panel.php:17
+msgid "Save"
+msgstr ""
+
+#: lib/views/tabs/woocommerce.php:40
+msgid "Enable Woocommerce Coupon"
+msgstr ""
+
+#: lib/views/tabs/woocommerce.php:42
+msgid "Enable this option if you want to offer a coupon code for your customers."
+msgstr ""
+
+#: lib/views/tabs/woocommerce.php:44
+msgid "Disable this option when your coupon expire, If you want to keep collecting emails."
+msgstr ""
+
+#: lib/views/tabs/woocommerce.php:50
+msgid "Select coupon"
+msgstr ""
+
+#: lib/views/tabs/woocommerce.php:51
+msgid "Do not have any coupon yet?"
+msgstr ""
+
+#: lib/views/tabs/woocommerce.php:51
+msgid "Create New One"
+msgstr ""
+
+#: lib/views/tabs/urgency.php:11
+#: lib/views/tabs/urgency.php:15
+msgid "Expiry date"
+msgstr ""
+
+#: lib/views/tabs/urgency.php:13
+msgid "Disabled"
+msgstr ""
+
+#: lib/views/tabs/urgency.php:14
+msgid "Visitor session"
+msgstr ""
+
+#: lib/views/tabs/urgency.php:20
+#: lib/views/tabs/urgency.php:21
+msgid "Coupon expiry date"
+msgstr ""
+
+#: lib/views/tabs/urgency.php:22
+#: lib/views/tabs/urgency.php:103
+msgid "Coupon usage limit"
+msgstr ""
+
+#: lib/views/tabs/urgency.php:51
+msgid "Urgency (Countdown Timer)"
+msgstr ""
+
+#: lib/views/tabs/urgency.php:54
+msgid "\"Visitor Session\", each visitor has urgency session time (Best)."
+msgstr ""
+
+#: lib/views/tabs/urgency.php:61
+msgid "Session time"
+msgstr ""
+
+#: lib/views/tabs/urgency.php:73
+#: lib/views/tabs/general.php:77
+msgid "Minute(s)"
+msgstr ""
+
+#: lib/views/tabs/urgency.php:74
+#: lib/views/tabs/general.php:78
+msgid "Hour(s)"
+msgstr ""
+
+#: lib/views/tabs/urgency.php:75
+#: lib/views/tabs/urgency.php:90
+#: lib/views/tabs/general.php:79
+#: lib/views/tabs/general.php:96
+msgid "Day(s)"
+msgstr ""
+
+#: lib/views/tabs/urgency.php:83
+msgid "Re-create session after"
+msgstr ""
+
+#: lib/views/tabs/urgency.php:99
+msgid "Set coupon expiry date."
+msgstr ""
+
+#: lib/views/tabs/urgency.php:108
+msgid "Set usage limit before coupon expire."
+msgstr ""
+
+#: lib/views/tabs/email.php:16
+msgid "Send Email When Subscribe"
+msgstr ""
+
+#: lib/views/tabs/email.php:17
+msgid "It will be sent automatically after a visitor subscribe."
+msgstr ""
+
+#: lib/views/tabs/email.php:18
+msgid "Useful when offering a coupon code or something to download."
+msgstr ""
+
+#: lib/views/tabs/email.php:25
+msgid "Subject"
+msgstr ""
+
+#: lib/views/tabs/email.php:31
+msgid "Content"
+msgstr ""
+
+#: lib/views/tabs/email.php:36
+msgid "Fixed value or percentage, depending on discount type you have chosen."
+msgstr ""
+
+#: lib/views/tabs/email.php:37
+msgid "Code used by the customer to apply the coupon."
+msgstr ""
+
+#: lib/views/tabs/email.php:38
+msgid "Date the coupon should expire and can no longer be used."
+msgstr ""
+
+#: lib/views/tabs/email.php:39
+msgid "When clicked customers will be redirected to your shop."
+msgstr ""
+
+#: lib/views/tabs/design.php:16
+msgid "Select template"
+msgstr ""
+
+#: lib/views/tabs/design.php:19
+msgid "This setting is auto-saved on change."
+msgstr ""
+
+#: lib/views/tabs/design.php:21
+msgid "Default"
+msgstr ""
+
+#: lib/views/tabs/design.php:22
+msgid "Default Vertical"
+msgstr ""
+
+#: lib/views/tabs/design.php:23
+msgid "Black Friday"
+msgstr ""
+
+#: lib/views/tabs/design.php:24
+msgid "Black Friday Vertical"
+msgstr ""
+
+#: lib/views/tabs/design.php:25
+msgid "Cyber Monday"
+msgstr ""
+
+#: lib/views/tabs/design.php:26
+msgid "Cyber Monday Vertical"
+msgstr ""
+
+#: lib/views/tabs/design.php:27
+msgid "Christmas"
+msgstr ""
+
+#: lib/views/tabs/design.php:28
+msgid "Christmas Vertical"
+msgstr ""
+
+#: lib/views/tabs/design.php:29
+msgid "Valentine's Day"
+msgstr ""
+
+#: lib/views/tabs/design.php:30
+msgid "Valentine's Day Vertical"
+msgstr ""
+
+#: lib/views/tabs/design.php:31
+msgid "Halloween Vertical"
+msgstr ""
+
+#: lib/views/tabs/design.php:32
+msgid "Womens's Day"
+msgstr ""
+
+#: lib/views/tabs/design.php:33
+msgid "Womens's Day Vertical"
+msgstr ""
+
+#: lib/views/tabs/design.php:34
+msgid "Men's Day"
+msgstr ""
+
+#: lib/views/tabs/design.php:35
+msgid "Men's Day Vertical"
+msgstr ""
+
+#: lib/views/tabs/design.php:51
+msgid "Edit Template"
+msgstr ""
+
+#: lib/views/tabs/mailchimp.php:10
+msgid "Select List"
+msgstr ""
+
+#: lib/views/tabs/mailchimp.php:38
+msgid "Enable Mailchimp"
+msgstr ""
+
+#: lib/views/tabs/mailchimp.php:45
+#: lib/views/tabs/mailchimp.php:46
+msgid "API Key"
+msgstr ""
+
+#: lib/views/tabs/mailchimp.php:46
+msgid "Get your API key from here:"
+msgstr ""
+
+#: lib/views/tabs/mailchimp.php:52
+msgid "Lists"
+msgstr ""
+
+#: lib/views/tabs/mailchimp.php:54
+msgid "Lists are where you store your subscriber’s information."
+msgstr ""
+
+#: lib/views/tabs/mailchimp.php:55
+msgid "To see your Mailchimp lists, add your API key then click on the save button"
+msgstr ""
+
+#: lib/views/tabs/mailchimp.php:62
+msgid "Enable Campaign"
+msgstr ""
+
+#: lib/views/tabs/mailchimp.php:69
+msgid "Campaign API URL"
+msgstr ""
+
+#: lib/views/tabs/mailchimp.php:70
+msgid "Check out the documentation if you do not know where to get this url from."
+msgstr ""
+
+#: lib/views/tabs/general.php:19
+msgid "Campaign Name"
+msgstr ""
+
+#: lib/views/tabs/general.php:25
+msgid "Popup trigger"
+msgstr ""
+
+#: lib/views/tabs/general.php:29
+msgid "When a visitor is about to exit."
+msgstr ""
+
+#: lib/views/tabs/general.php:30
+msgid "After X seconds."
+msgstr ""
+
+#: lib/views/tabs/general.php:31
+msgid "After scrolling down X amount."
+msgstr ""
+
+#: lib/views/tabs/general.php:32
+msgid "Random."
+msgstr ""
+
+#: lib/views/tabs/general.php:37
+msgid "Display popup after"
+msgstr ""
+
+#: lib/views/tabs/general.php:40
+msgid "Set how many seconds to wait before displaying the popup."
+msgstr ""
+
+#: lib/views/tabs/general.php:44
+msgid "Vertical scroll percentage"
+msgstr ""
+
+#: lib/views/tabs/general.php:51
+msgid "Display minimized bar"
+msgstr ""
+
+#: lib/views/tabs/general.php:55
+msgid "When a visitor close popup without subscribing."
+msgstr ""
+
+#: lib/views/tabs/general.php:56
+msgid "Never."
+msgstr ""
+
+#: lib/views/tabs/general.php:57
+msgid "Always."
+msgstr ""
+
+#: lib/views/tabs/general.php:59
+msgid "You can set the box position, size, icon & colors from the design tab."
+msgstr ""
+
+#: lib/views/tabs/general.php:64
+msgid "Subscription reminder ( Not subscribe )"
+msgstr ""
+
+#: lib/views/tabs/general.php:65
+msgid "Time to show popup again if visitor does not subscribe."
+msgstr ""
+
+#: lib/views/tabs/general.php:87
+msgid "Subscription reminder ( subscribe )"
+msgstr ""
+
+#: lib/views/tabs/general.php:88
+msgid "Sometime a subscriber unsubscribe. Setting a reminded after an amount of time is a smart idea."
+msgstr ""
+
+#: lib/views/template_editor/panel.php:18
+msgid "Exit"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:29
+#: lib/views/template_editor/panel.php:30
+msgid "Optin"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:33
+#: lib/views/template_editor/panel.php:34
+msgid "Success"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:37
+#: lib/views/template_editor/panel.php:38
+msgid "Style"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:41
+#: lib/views/template_editor/panel.php:42
+msgid "Social Media"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:45
+#: lib/views/template_editor/panel.php:46
+#: lib/class-campaign-list-table.php:131
+msgid "Minimized Bar"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:49
+#: lib/views/template_editor/panel.php:50
+#: lib/class-backend.php:372
+#: lib/class-campaign-list-table.php:124
+msgid "Urgency"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:59
+#: lib/views/template_editor/panel.php:164
+msgid "Title"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:68
+#: lib/views/template_editor/panel.php:173
+msgid "Message"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:78
+msgid "Enable Name Input"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:88
+msgid "Name Input Text"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:98
+msgid "Enable Mobile Input"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:107
+msgid "Mobile Input Text"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:116
+msgid "Email Input Text"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:125
+msgid "Submit Button Text"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:134
+msgid "Spam Text"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:143
+msgid "Enable GDPR Checkbox"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:152
+msgid "GDPR Text"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:185
+msgid "Display Animation"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:189
+msgid "None"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:190
+msgid "Fade"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:191
+msgid "Scale out"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:192
+msgid "Scale in"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:193
+msgid "Slide in from top"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:194
+msgid "Slide in from bottom"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:195
+msgid "Slide in from right"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:196
+msgid "Slide in from left"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:197
+msgid "Spin"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:198
+msgid "3D: Rotate from top"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:199
+msgid "3D: Rotate from bottom"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:200
+msgid "3D: Rotate from right"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:201
+msgid "3D: Rotate from left"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:209
+msgid "Overlay Color"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:221
+msgid "Layout"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:234
+msgid "Form Margin Top (px)"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:244
+#: lib/views/template_editor/panel.php:614
+msgid "Background Color"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:253
+msgid "Background Image"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:256
+msgid "Select/Upload image"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:263
+msgid "Background Image Position"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:283
+msgid "Background Image Size"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:298
+msgid "Background Image Repeat"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:316
+msgid "Title Color"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:325
+msgid "Title Font Size (px)"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:334
+msgid "Body Text Color"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:343
+msgid "Body Font Size (px)"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:352
+msgid "Email Input Text Color"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:361
+msgid "Email Input Background Color"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:370
+msgid "Email Input Font Size (px)"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:379
+msgid "Button Color"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:388
+msgid "Button Background color"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:397
+msgid "Close Icon Color"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:406
+msgid "Close Icon Background Color"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:419
+msgid "Open Links In New Tabs"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:428
+msgid "Icons Design"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:438
+msgid "Icons Size (px)"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:447
+msgid "Social Icons Color Type"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:451
+msgid "Default Colors"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:452
+msgid "Custom Color"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:460
+msgid "Social Icons Color"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:470
+msgid "Facebook Username"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:481
+msgid "Twitter Username"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:492
+msgid "Instagram Username"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:503
+msgid "Pinterest Username"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:514
+msgid "Linkedin Username"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:525
+msgid "Youtube URL"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:539
+msgid "Position"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:543
+msgid "Bottom Right"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:544
+msgid "Bottom Left"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:545
+msgid "Top Right"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:546
+msgid "Top Left"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:555
+msgid "Size (px)"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:565
+msgid "Select Icon"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:575
+msgid "Icon Color"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:584
+msgid "Minimized Bar Background Color"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:596
+msgid "Font Size (px)"
+msgstr ""
+
+#: lib/views/template_editor/panel.php:605
+msgid "Text Color"
+msgstr ""
+
+#: lib/functions.php:14
+msgid "Upgrade"
+msgstr ""
+
+#: lib/functions.php:110
+msgid "Coupon List"
+msgstr ""
+
+#: lib/functions.php:167
+msgid "%"
+msgstr ""
+
+#: lib/functions.php:442
+msgid "Invalid Mailchimp API key."
+msgstr ""
+
+#: lib/functions.php:476
+#: lib/functions.php:515
+msgid "Invalid email address."
+msgstr ""
+
+#: lib/functions.php:480
+msgid "Invalid Mailchimp list id."
+msgstr ""
+
+#: lib/functions.php:521
+#: lib/functions.php:525
+msgid "Invalid Mailchimp campaign url."
+msgstr ""
+
+#: lib/skins/urgency__premium_only.php:8
+msgid "%d coupon left"
+msgid_plural "%d coupons left"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/skins/urgency__premium_only.php:15
+msgid "D"
+msgstr ""
+
+#: lib/skins/urgency__premium_only.php:20
+msgid "HR"
+msgstr ""
+
+#: lib/skins/urgency__premium_only.php:25
+msgid "MS"
+msgstr ""
+
+#: lib/skins/urgency__premium_only.php:30
+msgid "SEC"
+msgstr ""
+
+#: lib/delabon/wp/panel/views/panel.php:28
+msgid "You may need!"
+msgstr ""
+
+#: lib/class-backend.php:58
+msgid "Are you sure?"
+msgstr ""
+
+#: lib/class-backend.php:59
+msgid "Are you sure? activating this campaign will deactivate any active campain."
+msgstr ""
+
+#: lib/class-backend.php:143
+msgid "skytake Campaigns"
+msgstr ""
+
+#: lib/class-backend.php:144
+#: lib/class-backend.php:242
+#: lib/class-campaign-list-table.php:15
+msgid "Campaigns"
+msgstr ""
+
+#: lib/class-backend.php:163
+#: lib/class-backend.php:164
+msgid "New campaign"
+msgstr ""
+
+#: lib/class-backend.php:175
+#: lib/class-backend.php:176
+msgid "Edit campaign"
+msgstr ""
+
+#: lib/class-backend.php:187
+#: lib/class-backend.php:188
+msgid "Edit template"
+msgstr ""
+
+#: lib/class-backend.php:197
+#: lib/class-backend.php:198
+#: lib/class-backend.php:363
+msgid "Documentation"
+msgstr ""
+
+#: lib/class-backend.php:208
+#: lib/class-backend.php:209
+msgid "Get Support"
+msgstr ""
+
+#: lib/class-backend.php:220
+#: lib/class-backend.php:221
+msgid "Try Premium Version"
+msgstr ""
+
+#: lib/class-backend.php:243
+msgid "Add New"
+msgstr ""
+
+#: lib/class-backend.php:272
+msgid "Export All"
+msgstr ""
+
+#: lib/class-backend.php:298
+msgid "Export all emails to CSV"
+msgstr ""
+
+#: lib/class-backend.php:299
+msgid "Leave start date empty to export all emails."
+msgstr ""
+
+#: lib/class-backend.php:304
+msgid "Start date"
+msgstr ""
+
+#: lib/class-backend.php:306
+msgid "Export Now"
+msgstr ""
+
+#: lib/class-backend.php:364
+msgid "Version"
+msgstr ""
+
+#: lib/class-backend.php:365
+msgid "Settings Are Saved."
+msgstr ""
+
+#: lib/class-backend.php:370
+msgid "General"
+msgstr ""
+
+#: lib/class-backend.php:371
+msgid "Woocommerce"
+msgstr ""
+
+#: lib/class-backend.php:373
+msgid "Mailchimp"
+msgstr ""
+
+#: lib/class-backend.php:374
+msgid "Welcome Email"
+msgstr ""
+
+#: lib/class-backend.php:375
+msgid "Design"
+msgstr ""
+
+#: lib/class-backend.php:376
+msgid "Filters"
+msgstr ""
+
+#: lib/class-backend.php:487
+msgid "Please activate one of your Skytake campaigns."
+msgstr ""
+
+#: lib/class-backend.php:500
+msgid "Please install & activate Woocommerce to use Skytake Woocommerce Coupon feature."
+msgstr ""
+
+#: lib/class-backend.php:514
+msgid "The coupon you have selected for Skytake active campaign has expired!"
+msgstr ""
+
+#: lib/class-backend.php:515
+msgid "Please select a new coupon or disable Skytake Woocommerce coupon feature."
+msgstr ""
+
+#: lib/class-backend.php:525
+msgid "You have enabled Skytake Woocommerce coupon feature for your active campaign but you did not select a coupon!"
+msgstr ""
+
+#: lib/class-backend.php:536
+msgid "You did not set Skytake \"Coupon expire date\" for your active campaign. Please select a date or disable urgency."
+msgstr ""
+
+#: lib/class-backend.php:543
+msgid "You did not set Skytake \"Coupon usage limit\" for your active campaign. Please select a usage limit or disable urgency."
+msgstr ""
+
+#: lib/class-backend.php:570
+msgid "Hi there! you have been using <strong>Skytake Leads & Sales</strong> for few days. I hope it is helpful."
+msgstr ""
+
+#: lib/class-backend.php:574
+msgid "Would you mind give it 5-stars review to help spread the word? And to keep me updating it & adding more features to it!"
+msgstr ""
+
+#: lib/class-backend.php:576
+msgid "Would you want to get awesome features?"
+msgstr ""
+
+#: lib/class-backend.php:637
+msgid "Codecanyon Purchase Validation"
+msgstr ""
+
+#: lib/class-backend.php:642
+msgid "Email Address"
+msgstr ""
+
+#: lib/class-backend.php:643
+msgid "Purchase Code"
+msgstr ""
+
+#: lib/class-backend.php:647
+msgid "I agree with the <a href=\"https://delabon.com/terms\" target=\"_blank\">terms</a> and <a href=\"https://delabon.com/privacy-policy\" target=\"_blank\">privacy policy</a>."
+msgstr ""
+
+#: lib/class-backend.php:650
+msgid "Validate"
+msgstr ""
+
+#: lib/class-ajax.php:45
+msgid "Invalid Email"
+msgstr ""
+
+#: lib/class-ajax.php:49
+msgid "Invalid Purchase Code"
+msgstr ""
+
+#: lib/class-ajax.php:393
+msgid "Invalid Camapaign."
+msgstr ""
+
+#: lib/class-ajax.php:397
+msgid "Invalid Email."
+msgstr ""
+
+#: lib/class-ajax.php:507
+msgid "Shop Now"
+msgstr ""
+
+#: lib/class-campaign-list-table.php:14
+msgid "Campaign"
+msgstr ""
+
+#: lib/class-campaign-list-table.php:61
+msgid "No campaigns avaliable."
+msgstr ""
+
+#: lib/class-campaign-list-table.php:71
+msgid "Name"
+msgstr ""
+
+#: lib/class-campaign-list-table.php:72
+msgid "Status"
+msgstr ""
+
+#: lib/class-campaign-list-table.php:73
+msgid "Tags"
+msgstr ""
+
+#: lib/class-campaign-list-table.php:74
+msgid "Statistics"
+msgstr ""
+
+#: lib/class-campaign-list-table.php:99
+msgid "Edit"
+msgstr ""
+
+#: lib/class-campaign-list-table.php:100
+msgid "Duplicate"
+msgstr ""
+
+#: lib/class-campaign-list-table.php:101
+msgid "Delete"
+msgstr ""
+
+#: lib/class-campaign-list-table.php:157
+msgid "Views"
+msgstr ""
+
+#: lib/class-campaign-list-table.php:158
+msgid "Conversions"
+msgstr ""
+
+#: lib/class-campaign-list-table.php:159
+msgid "Conversion Rate"
+msgstr ""

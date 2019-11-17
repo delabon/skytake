@@ -1,0 +1,834 @@
+/*****************************************************
+ * Global
+*****************************************************/
+.__hidden{
+    display: none !important;
+}
+
+
+/*****************************************************
+ * Bar
+*****************************************************/
+.skytake-bar,
+.skytake-bar *{
+    box-sizing: border-box;
+}
+
+.skytake-bar{
+    z-index: 99998;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    background-color: purple;
+    cursor: pointer;
+    transition: all 300ms ease;
+    transform: scale(0);
+    visibility: hidden;
+}
+
+.skytake-bar.__show{
+    transform: scale(1);
+    visibility: visible;
+}
+
+.skytake-bar[data-position="bottom_left"]{
+    right: auto;
+    left: 20px;
+}
+
+.skytake-bar[data-position="top_left"]{
+    right: auto;
+    left: 20px;
+    bottom: auto;
+    top: 20px;
+}
+
+.skytake-bar[data-position="top_right"]{
+    bottom: auto;
+    top: 20px;
+}
+
+body.admin-bar .skytake-bar[data-position="top_left"],
+body.admin-bar .skytake-bar[data-position="top_right"]{
+    top: 55px;
+}
+
+.skytake-bar:hover{
+    opacity: 0.9;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.skytake-bar span{
+    font-size: 40px;
+    line-height: 40px;
+    color: white;
+}
+
+/*****************************************************
+ * Popup
+*****************************************************/
+
+html.__skytake_opened,
+html.__skytake_opened > body{
+    overflow: hidden !important;
+}
+
+.skytake,
+.skytake *{
+    box-sizing: border-box;
+}
+
+.skytake-overlay{
+    display: none;
+    z-index: 999998;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    zoom: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0 !important;
+    float: none !important;
+}
+
+.skytake-overlay.__show{
+    display: block;
+}
+
+.skytake-popup{
+    z-index: 999999;
+    letter-spacing: normal;
+    outline: none;
+    text-decoration: none;
+    text-indent: 0px;
+    text-shadow: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-appearance: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    width: auto;
+    height: auto;
+    margin: 0; /* 0 fixes center issue */
+    padding: 0;
+    -webkit-font-smoothing: subpixel-antialiased; /** fixes blurry text **/
+}
+
+.skytake-popup.__top_zero{
+    top: 20px;
+    transform: translate( -50%, 0 );
+}
+
+.skytake-close{
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #cccccc;
+    color: #000;
+    fill: #000;
+    border-radius: 24px;
+    border: 0 !important;
+    outline: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.skytake-close:focus,
+.skytake-close:hover{
+    opacity: 0.85;
+    background: #f1f1f1;
+    color: #000;
+    fill: #000;
+}
+
+/* Container */
+.skytake-container{
+    background-color: #F8F8F8;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: initial !important;
+}
+
+.skytake-content{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 350px;
+    width: 100% !important;
+}
+
+.skytake.__layout_right .skytake-content{
+    justify-content: flex-end;
+}
+
+.skytake .skytake-box-one{
+    display: none;
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.skytake .skytake-box-two{
+    padding: 25px;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.skytake .skytake-box-two img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.skytake.__layout_left .skytake-box-one,
+.skytake.__layout_right .skytake-box-one{
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    flex-basis: 38%;
+    width: 38%;
+    max-width: 38%;
+}
+
+.skytake.__layout_left .skytake-box-two,
+.skytake.__layout_right .skytake-box-two{
+    flex-basis: 62%;
+    max-width: 62%;
+}
+
+.skytake.__layout_left .skytake-box-one{
+    left: auto;
+    right: 0;
+}
+
+.skytake.__layout_right .skytake-box-one{
+    left: 0;
+    right: auto;
+}
+
+/** View **/
+.skytake-view{
+    display: block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    color: #2e2e2e;
+}
+
+.skytake .skytake-view.__response{
+    display: none;
+}
+
+.skytake.__show_response .skytake-view.__response{
+    display: block;
+}
+
+.skytake.__show_response .skytake-view.__request{
+    display: none;
+}
+
+/* Content */
+.skytake-content a{
+    color: #2e2e2e;
+}
+
+.skytake-title {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.skytake-message{
+    margin: 0 0 15px 0;
+    font-size: 1em;
+    text-transform: initial;
+    text-decoration: none;
+}
+
+/**
+ * Urgency
+**/
+.skytake-urgency{
+    text-transform: uppercase;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.skytake-urgency[data-type="disabled"]{
+    display: none !important;
+}
+
+.skytake-urgency[data-type="usage_limit"] .skytake-urgency-timer{
+    display: none !important;
+}
+
+.skytake-urgency[data-type="session"] .skytake-urgency-usage-limit,
+.skytake-urgency[data-type="expiry_date"] .skytake-urgency-usage-limit{
+    display: none !important;
+}
+
+.skytake-urgency-usage-limit,
+.skytake-urgency-timer{
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    overflow: hidden;
+}
+
+.skytake-urgency-usage-limit > div,
+.skytake-urgency-timer > div{ 
+    position: relative;
+    display: inline-block;
+    color: white;
+    background-color: #D4145A;
+    margin: 0 5px;
+    padding: 0.5em;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+
+.skytake-urgency-timer .__timer{ 
+    padding: 0;
+    font-size: 1.7em;
+    display: block;
+}
+
+.skytake-urgency.__urgency_usage_limit .skytake-urgency-timer > div{
+    line-height: 1;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+
+/** form */
+.skytake-form{
+    margin: 0;
+    padding: 0;
+}
+
+.skytake-form-more{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skytake-form-more input{
+    flex: 0 1 48.8%;
+    display: none;
+}
+
+.skytake-form-more[data-count="1"] input{
+    flex: 0 1 100%;
+}
+
+.skytake-form-more input.__show{
+    display: block;
+}
+
+.skytake-name,
+.skytake-mobile,
+.skytake-email{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+    text-decoration: none;
+
+    width: 100%;
+    height: auto;
+    padding: 12px 20px;
+    margin: 0 auto 15px;
+    
+    color: #666;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    border: 0 !important;
+    border-radius: 0;
+}
+
+.skytake-name:focus,
+.skytake-mobile:focus,
+.skytake-email:focus{
+    border-color: rgba(116, 185, 255, 0.7);
+    outline: 0 !important;
+}
+
+.skytake-form-more .skytake-mobile,
+.skytake-form-more .skytake-name{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.skytake-submit{
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: initial;
+    
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: normal;
+
+    width: 100%;
+    height: auto;
+    padding: 12px 20px;
+    margin: 0;
+
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    color: white;
+    background-color: #D4145A;
+}
+
+.skytake-submit:hover{
+    opacity: 0.7;
+}
+
+.skytake-submit .__loader {
+    display: none;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    vertical-align: middle !important;
+}
+  
+.skytake-submit .__loader > div {
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 100%;
+    display: inline-block;
+    animation: skytake_loader 700ms infinite ease-in-out both;
+}
+
+.skytake-form.__loading .skytake-submit .__loader{
+    display: inline-block;
+}
+
+.skytake-form.__loading .skytake-submit .__text{
+    display: none;
+} 
+
+.skytake-spam{
+    display: block;
+    text-align: center;
+    font-size: 0.85em;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+.skytake-gdpr-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    position: relative;
+}
+
+.skytake-gdpr-text{
+    margin: 0 5px;
+    font-size: 0.85em;
+}
+
+.skytake-gdpr-text a{
+    text-decoration: underline;
+    font-size: inherit !important;
+}
+
+.skytake-gdpr-text a:hover,
+.skytake-gdpr-text a:focus{
+    opacity: 0.8;
+}
+
+.customize-partial-edit-shortcut-skytake_gdpr_text{
+    top: -20px;
+}
+
+/** Social Icons */
+.skytake-social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.skytake-social-icons[data-count="0"]{
+    display: none !important;
+}
+
+.skytake-social-icons a{
+    display: inline-block;
+    margin: 0 7px;
+    transition: all 100ms;
+    text-decoration: none !important;
+}
+
+.skytake-social-icons a:hover{
+    transform: scale(1.2);
+}
+
+.skytake-social-icons span{
+    transition: all 200ms ease;
+}
+
+.skytake-social-icons.__color_type_default [class*='dlbicons-facebook']{
+    color: #3b5998;
+}
+
+.skytake-social-icons.__color_type_default [class*='dlbicons-twitter']{
+    color: #38A1F3;
+}
+
+.skytake-social-icons.__color_type_default [class*='dlbicons-instagram']{
+    color: #8a3ab9;
+}
+
+.skytake-social-icons.__color_type_default [class*='dlbicons-linkedin']{
+    color: #0077B5;
+}
+
+.skytake-social-icons.__color_type_default [class*='dlbicons-pinterest']{
+    color: #c8232c;
+}
+
+.skytake-social-icons.__color_type_default [class*='dlbicons-youtube']{
+    color: #ff0000;
+}
+
+
+/*****************************************************
+ * Floating Bar
+*****************************************************/
+.skytake-floating-bar{
+    z-index: 99995;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+body.admin-bar .skytake-floating-bar[data-position="top"]{
+    top: 32px;
+}
+
+.skytake-floating-bar .skytake-container{
+    width: 100%;
+    background-attachment: initial !important;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+
+.skytake-floating-bar .skytake-close{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    left: auto;
+    transform: translate( 0, -50% );
+    -webkit-font-smoothing: subpixel-antialiased; /** fixes blurry text **/
+}
+
+.skytake-floating-bar .skytake-content{
+    padding: 10px 15px;
+    min-height: 0;
+    display: block;
+}
+
+.skytake-floating-bar .skytake-view,
+.skytake-floating-bar .skytake-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skytake-floating-bar .skytake-view.__response{
+    display: none;
+}
+
+.skytake-floating-bar.__show_response .skytake-view.__request{
+    display: none;
+}
+
+.skytake-floating-bar.__show_response .skytake-view.__response{
+    display: flex;
+}
+
+.skytake-floating-bar .skytake-title{
+    font-weight: normal;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.skytake-floating-bar .skytake-submit,
+.skytake-floating-bar .skytake-email{
+    margin: 0 7px 0;
+    font-size: 14px;
+    padding: 7px 15px;
+    flex-basis: auto;
+    width: auto;
+}
+
+.skytake-floating-bar .skytake-email{
+    min-width: 200px;
+}
+
+.skytake-floating-bar .skytake-urgency{
+    margin: 0 5px;
+    font-size: 10px;
+}
+
+.skytake-floating-bar .skytake-urgency-usage-limit,
+.skytake-floating-bar .skytake-urgency-timer {
+    padding: 0 10px;
+}
+
+.skytake-floating-bar .skytake-urgency-usage-limit > div,
+.skytake-floating-bar .skytake-urgency-timer > div {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    display: inline-block;
+}
+
+.skytake-floating-bar .skytake-urgency-timer > div:first-child{
+    padding-left: 10px;
+}
+
+.skytake-floating-bar .skytake-urgency-timer > div:last-child{
+    padding-right: 10px;
+}
+
+.skytake-floating-bar .skytake-urgency-timer .__timer{
+    display: inline-block;
+}
+
+/** position **/
+.skytake-floating-bar[data-position="bottom"]{
+    top: auto;
+    bottom: 0;
+}
+
+
+/*****************************************************
+ * Scroll Box
+*****************************************************/
+.skytake-scroll-box{
+    z-index: 99996;
+    position: fixed;
+    max-width: 280px;
+}
+
+.skytake-scroll-box .skytake-container{
+    width: 100%;
+    background-attachment: initial !important;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+
+body.admin-bar .skytake-scroll-box[data-position="top_right"],
+body.admin-bar .skytake-scroll-box[data-position="top_left"]{
+    top: 32px;
+}
+
+.skytake-scroll-box .skytake-close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    left: auto;
+}
+
+.skytake-scroll-box .skytake-content{
+    padding: 0;
+    min-height: 0;
+    display: block;
+}
+
+.skytake-scroll-box .skytake-box-two{
+    padding: 15px;
+}
+
+.skytake-scroll-box .skytake-name,
+.skytake-scroll-box .skytake-mobile,
+.skytake-scroll-box .skytake-submit,
+.skytake-scroll-box .skytake-email{
+    font-size: 14px;
+    padding: 7px 15px;
+}
+
+.skytake-scroll-box .skytake-form-more{
+    justify-content: flex-start;
+}
+
+.skytake-scroll-box .skytake-form-more input{
+    flex: 0 1 auto;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/** position */
+.skytake-scroll-box[data-position="bottom_left"]{
+    left: 20px;
+    right: auto;
+    bottom: 0;
+    top: auto;
+}
+
+.skytake-scroll-box[data-position="bottom_right"]{
+    left: auto;
+    right: 20px;
+    bottom: 0;
+    top: auto;
+}
+
+.skytake-scroll-box[data-position="top_right"]{
+    left: auto;
+    right: 20px;
+    bottom: auto;
+    top: 0;
+}
+
+.skytake-scroll-box[data-position="top_left"]{
+    left: 20px;
+    right: auto;
+    bottom: auto;
+    top: 0;
+}
+
+
+/*****************************************************
+ * Widget Form
+*****************************************************/
+.skytake-widget-form{
+    position: relative;
+    max-width: 100%;
+}
+
+.skytake-widget-form .skytake-container{
+    width: 100%;
+    background-attachment: initial !important;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+
+body.skytake-preview-active .skytake-widget-form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    width: 300px;
+
+    -webkit-font-smoothing: subpixel-antialiased; /** fixes blurry text **/
+}
+
+.skytake-widget-form .skytake-close{
+    display: none !important;
+}
+
+.skytake-widget-form .skytake-content{
+    padding: 0;
+    min-height: 0;
+    display: block;
+}
+
+.skytake-widget-form .skytake-box-two{
+    padding: 15px;
+}
+
+.skytake-widget-form .skytake-name,
+.skytake-widget-form .skytake-mobile,
+.skytake-widget-form .skytake-submit,
+.skytake-widget-form .skytake-email{
+    font-size: 14px;
+    padding: 7px 15px;
+}
+
+.skytake-widget-form .skytake-form-more{
+    justify-content: flex-start;
+}
+
+.skytake-widget-form .skytake-form-more input{
+    flex: 0 1 auto;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
+/*****************************************************
+ * Content Form
+*****************************************************/
+.skytake-content-form{
+    position: relative;
+    max-width: 100%;
+    display: none;
+}
+
+.skytake-content-form.__show{
+    display: block;
+}
+
+.skytake-content-form .skytake-container{
+    width: 100%;
+    background-attachment: initial !important;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+
+body.skytake-preview-active .skytake-content-form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    width: 650px;
+
+    -webkit-font-smoothing: subpixel-antialiased; /** fixes blurry text **/
+}
+
+.skytake-content-form .skytake-close{
+    display: none !important;
+}
+
+
+/*****************************************************
+ * Responsive
+*****************************************************/
+
+@media screen and ( max-width: 782px ){
+
+    body.admin-bar .skytake-bar[data-position="top_left"],
+    body.admin-bar .skytake-bar[data-position="top_right"]{
+        top: 70px;
+    }
+
+    body.admin-bar .skytake-scroll-box[data-position="top_right"],
+    body.admin-bar .skytake-scroll-box[data-position="top_left"],
+    body.admin-bar .skytake-floating-bar[data-position="top"]{
+        top: 46px;
+    }
+}

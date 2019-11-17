@@ -1,0 +1,4 @@
+.dlb_input_checkbox[data-checked="1"] .__toggle:before{
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+}

@@ -1,0 +1,1 @@
+<?php require SKYTAKE_PATH . '/inc/campaigns/popup/views/frontend/social-icons.php' ?>
