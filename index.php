@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Skytake Leads & Sales
  * Description: Increase your leads & sales TODAY!
- * Version: 0.30.1
+ * Version: 0.30.2
  * Author: Delabon.com
  * Author Uri: https://delabon.com
  * Text Domain: skytake
@@ -13,7 +13,7 @@
 defined( 'ABSPATH' ) or die( 'Mmmmm Funny ?' );
 
 # Config
-define( 'SKYTAKE_VERSION', '0.30.1' );
+define( 'SKYTAKE_VERSION', '0.30.2' );
 define( 'SKYTAKE_URL', plugins_url( '',__FILE__) );
 define( 'SKYTAKE_PATH', __DIR__ );
 define( 'SKYTAKE_DOC_URL', 'https://delabon.com/docs' );

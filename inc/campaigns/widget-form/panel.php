@@ -135,7 +135,7 @@ $panel->add_setting( 'template', [
         'value' => $campaign->setting('template'),
         'items' => array(
             'bubble_sky_400' => array(
-                'url' => SKYTAKE_URL . '/assets/img/templates/popup/default.png',
+                'url' => SKYTAKE_URL . '/assets/img/templates/widget_form/bubble_sky.png',
                 'title' => __('Bubble Sky', 'skytake'),
             ),
             // 'black_friday_400__premium_only' => array(

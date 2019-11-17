@@ -116,7 +116,7 @@ $panel->add_setting( 'template', [
                 'title' => __('Bubble Sky', 'skytake'),
             ),
             'bubble_sky_2' => array(
-                'url' => SKYTAKE_URL . '/assets/img/templates/popup/default.png',
+                'url' => SKYTAKE_URL . '/assets/img/templates/popup/bubble_sky_vertical.png',
                 'title' => __('Bubble Sky Vertical', 'skytake'),
             ),
             // 'black_friday__premium_only' => array(
