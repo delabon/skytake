@@ -58,7 +58,7 @@ class Panel{
 
         wp_enqueue_script( 
             $slug . '-admin-panel-colorpicker-rgba', 
-            $assets_url . '/delabon/wp/panel/js/color-picker-rgba.js', 
+            $assets_url . '/delabon/wp/assets/js/color-picker-rgba.js', 
             array('jquery', 'wp-color-picker'), 
             $version, 
             true 
@@ -66,7 +66,7 @@ class Panel{
 
         wp_enqueue_script( 
             $slug . '-admin-panel', 
-            $assets_url . '/delabon/wp/panel/js/admin.js', 
+            $assets_url . '/delabon/wp/assets/js/admin.js', 
             array('jquery', 'wp-color-picker', 'jquery-ui-datepicker', $slug . '-admin-panel-colorpicker-rgba' ), 
             $version, 
             true 
@@ -88,14 +88,14 @@ class Panel{
 
         wp_enqueue_style( 
             $slug . '-admin-panel-jquery-ui', 
-            $assets_url . '/delabon/wp/panel/css/jquery-ui.min.css', 
+            $assets_url . '/delabon/wp/assets/css/jquery-ui.min.css', 
             array(), 
             $version 
         );
 
         wp_enqueue_style( 
             $slug . '-admin-panel', 
-            $assets_url . '/delabon/wp/panel/css/admin.css', 
+            $assets_url . '/delabon/wp/assets/css/admin.css', 
             array(), 
             $version 
         );
@@ -103,7 +103,7 @@ class Panel{
         if( is_rtl() ){
             wp_enqueue_style( 
                 $slug . '-admin-panel-rtl', 
-                $assets_url . '/delabon/wp/panel/css/admin-rtl.css', 
+                $assets_url . '/delabon/wp/assets/css/admin-rtl.css', 
                 array(), 
                 $version 
             );

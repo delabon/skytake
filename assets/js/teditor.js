@@ -51,6 +51,11 @@ function skytake_set_mailchimp_lists(){
  */
 function skytake_change_template( value ){
 
+    if( ! teditor_params.is_premium && value.search('premium_only') !== -1 ){
+        teditor.upgrade_popup_el.show();
+        return;
+    }
+    
     teditor.loader_el.show();
     teditor.body_el.find('#skytake_editor').attr('data-template', value);
 
@@ -280,6 +285,9 @@ var TEditor = function(){
     this.save_el = this.bar_el.find('.skt__btn_save');
     this.exit_el = this.bar_el.find('.skt__btn_exit');
 
+    this.upgrade_popup_el = this.body_el.find('.skytake_upgrade_popup');
+    this.exit_upgrade_popup_el = this.upgrade_popup_el.find('> span');
+
     this.iframe_el = jQuery('#skytake_editor_iframe iframe');
 
     this.preview = {};
@@ -341,6 +349,13 @@ TEditor.prototype.init = function(){
             _p.body_el.trigger('skytake_editor_loaded');
         });
     });
+
+    /** Listen for upgrade popup close */
+    this.exit_upgrade_popup_el.on('click', function(e){
+        e.preventDefault();
+        _p.upgrade_popup_el.hide();
+    });
+
 }
 
 /**

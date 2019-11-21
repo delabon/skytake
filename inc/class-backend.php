@@ -62,7 +62,7 @@ class Backend{
 	 * Enqueue styles.
 	 */
 	function enqueue_styles( $hook ) { 
-    
+            
         if( strpos( $hook, 'skytake') === false ) return;
 
         Panel::enqueue_styles( 'skytake', SKYTAKE_URL . '/lib/', SKYTAKE_VERSION );
@@ -133,18 +133,18 @@ class Backend{
             }
         );
 
-        if( ! is_premium() ){
-            add_submenu_page( 
-                'skytake', 
-                __('Try Premium Version', 'skytake'), 
-                __('Try Premium Version', 'skytake'), 
-                'manage_options',
-                'skytake_premium', 
-                function(){
-                    echo '<script>location.href = "'.SKYTAKE_UPGRADE_URL.'";</script>';
-                }
-            );
-        }
+        // if( ! is_premium() ){
+        //     add_submenu_page( 
+        //         'skytake', 
+        //         __('Try Premium Version', 'skytake'), 
+        //         __('Try Premium Version', 'skytake'), 
+        //         'manage_options',
+        //         'skytake_premium', 
+        //         function(){
+        //             echo '<script>location.href = "'.SKYTAKE_UPGRADE_URL.'";</script>';
+        //         }
+        //     );
+        // }
 
     }
 
@@ -157,52 +157,64 @@ class Backend{
         $add_link = admin_url('admin.php?page=skytake_add_campaign&_wpnonce='.$nonce);
 
         ?>
-            <div class="wrap">
-                <h1 class="wp-heading-inline">Skytake <?php _e('Campaigns', 'skytake'); ?></h1>
-                <a href="<?php echo $add_link ?>" class="page-title-action open-skytake-new-campaign"><?php _e('Add New', 'skytake'); ?></a>
-                <hr class="wp-header-end">
 
-                <div id="poststuff">
-                    <div id="post-body" class="metabox-holder columns-2">
-                        <div id="post-body-content">
-                            <div class="meta-box-sortables ui-sortable">
-                                <form method="post">
-                                    <?php
-                                        $this->campaign_list->prepare_items();
-                                        $this->campaign_list->display(); 
-                                    ?>
-                                </form>
+            <?php require SKYTAKE_PATH . '/inc/views/admin/header.php' ?>
+            
+            <div class="wrap">
+
+                <div class="dlb_container">
+
+                    <h1 class="wp-heading-inline"><?php _e('Campaigns', 'skytake'); ?></h1>
+                    
+                    <a href="<?php echo $add_link; ?>" class="page-title-action open-skytake-new-campaign"><?php _e('Add New', 'skytake'); ?></a>
+                    <?php require SKYTAKE_PATH . '/inc/views/admin/buttons.php' ?>
+
+                    <hr class="wp-header-end">
+
+                    <div id="poststuff">
+                        <div id="post-body" class="metabox-holder columns-2">
+                            <div id="post-body-content">
+                                <div class="meta-box-sortables ui-sortable">
+                                    <form method="post">
+                                        <?php
+                                            $this->campaign_list->prepare_items();
+                                            $this->campaign_list->display(); 
+                                        ?>
+                                    </form>
+                                </div>
                             </div>
                         </div>
+                        <br class="clear">
                     </div>
-                    <br class="clear">
+
+                    <div class="skytake-new-campaign __hidden">
+        
+                        <div class="skytake-new-campaign-box">
+        
+                            <header>
+            
+                                <?php echo HTML::select(array(
+                                    'name' => 'campaign_type',
+                                    'value' => 'none',
+                                    'title' => __('Select Campaign Type', 'skytake'),
+                                    'items' => skytake()->defaultConfig['campaign_types']
+                                ));?>
+        
+                            </header>
+        
+                            <section>
+                                <button class="button button-primary create-skytake-new-campaign"><?php _e('Create', 'skytake') ?></button>
+                                <button class="button close-skytake-new-campaign"><?php _e('Close', 'skytake') ?></button>
+                            </section>
+        
+                        </div>
+        
+                    </div>
+
                 </div>
-            </div>
-
-            <div class="skytake-new-campaign __hidden">
-
-                <div class="skytake-new-campaign-box">
-
-                    <header>
-    
-                        <?php echo HTML::select(array(
-                            'name' => 'campaign_type',
-                            'value' => 'none',
-                            'title' => __('Select Campaign Type', 'skytake'),
-                            'items' => skytake()->defaultConfig['campaign_types']
-                        ));?>
-
-                    </header>
-
-                    <section>
-                        <button class="button button-primary create-skytake-new-campaign"><?php _e('Create', 'skytake') ?></button>
-                        <button class="button close-skytake-new-campaign"><?php _e('Close', 'skytake') ?></button>
-                    </section>
-
-                </div>
 
             </div>
-
+            
         <?php
     }
 
@@ -210,58 +222,61 @@ class Backend{
     * Render subscribers page
     */
     function render_subscribers_page() {
+        
         ?>
+            <?php require SKYTAKE_PATH . '/inc/views/admin/header.php' ?>
+
             <div class="wrap">
 
-                <h1 class="wp-heading-inline">
-                    Skytake <?php _e('Subscribers', 'skytake'); ?>
-                </h1>
-                
-                <!--<a href="#list-exporter" class="page-title-action">
-                    <?php _e('Export All', 'skytake'); ?>
-                </a>-->
-                
-                <hr class="wp-header-end">
+                <div class="dlb_container">
 
-                <div id="poststuff">
-                    <div id="post-body" class="metabox-holder columns-2">
-                        <div id="post-body-content">
-                            <div class="meta-box-sortables ui-sortable">
-                                <form method="post">
-                                    <?php
-                                        $this->subscriber_list->prepare_items();
-                                        $this->subscriber_list->display(); 
-                                    ?>
-                                </form>
+                    <h1 class="wp-heading-inline"><?php _e('Subscribers', 'skytake'); ?></h1>
+                    <a href="#list-exporter" class="page-title-action"><?php _e('Export All', 'skytake'); ?></a>
+                    <?php require SKYTAKE_PATH . '/inc/views/admin/buttons.php' ?>
+                    
+                    <hr class="wp-header-end">
+
+                    <div id="poststuff">
+                        <div id="post-body" class="metabox-holder columns-2">
+                            <div id="post-body-content">
+                                <div class="meta-box-sortables ui-sortable">
+                                    <form method="post">
+                                        <?php
+                                            $this->subscriber_list->prepare_items();
+                                            $this->subscriber_list->display(); 
+                                        ?>
+                                    </form>
+                                </div>
                             </div>
                         </div>
+                        <br class="clear">
                     </div>
-                    <br class="clear">
+
+                    <?php 
+
+                    echo 
+                            
+                    HTML::twoInputs(
+                        array(
+                            'id' => 'list-exporter',
+                            'title' => __('Export all emails to CSV', 'skytake'),
+                            'description' => __('Leave start date empty to export all emails.', 'skytake'),
+                            'wrapper_class' => 'skytake_export_csv_date',
+                        ),
+                        HTML::datepicker(array(
+                            'wrapper' => false,
+                            'placeholder' => __('Start date', 'skytake'),
+                        )),
+                        HTML::a(__('Export Now', 'skytake'), array(
+                            'href'  => admin_url('admin.php?skytake_email_export=true'),
+                            'class'  => 'button button-primary'
+                        ))
+                    )
+                    ;
+
+                    ?>
+                
                 </div>
-
-                <?php 
-
-                // echo 
-                        
-                // HTML::twoInputs(
-                //     array(
-                //         'id' => 'list-exporter',
-                //         'title' => __('Export all emails to CSV', 'skytake') . upgrade_tag(),
-                //         'description' => __('Leave start date empty to export all emails.', 'skytake'),
-                //         'wrapper_class' => 'skytake_export_csv_date',
-                //     ),
-                //     HTML::datepicker(array(
-                //         'wrapper' => false,
-                //         'placeholder' => __('Start date', 'skytake'),
-                //     )),
-                //     HTML::a(__('Export Now', 'skytake'), array(
-                //         'href'  => admin_url('admin.php?skytake_email_export=true'),
-                //         'class'  => 'button button-primary'
-                //     ))
-                // )
-                // ;
-
-                ?>
 
             </div>
         <?php
@@ -272,7 +287,6 @@ class Backend{
      */
     function export_email_list(){
         
-        if( ! is_premium() ) return false;
         if( ! isset( $_GET['skytake_email_export'] ) ) return false;
 
         global $wpdb;

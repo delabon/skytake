@@ -19,7 +19,7 @@ $panel->add_setting( 'campaign_name', [
 $panel->add_setting( 'display_trigger', [
     'section' => 'general_settings',
     'output' => HTML::select(array( 
-        'title' => __('Popup trigger', 'skytake'),
+        'title' => __('Display trigger', 'skytake'),
         'name' => 'display_trigger',
         'value' => $campaign->setting('display_trigger'),
         'items' => array(
@@ -35,10 +35,10 @@ $panel->add_setting( 'display_after_x_seconds', [
     'class' => 'display_after_x_seconds_container' . ( in_array( $trigger_type, [ 'load', 'random' ] ) ? '' : ' __hidden'),
     'section' => 'general_settings',
     'output' => HTML::input(array( 
-        'title' => __('Display popup after', 'skytake'),
+        'title' => __('Seconds', 'skytake'),
         'name' => 'display_after_x_seconds', 
         'value' =>  $campaign->setting('display_after_x_seconds'),
-        'description' => __('Set how many seconds to wait before displaying the popup.', 'skytake'),
+        'description' => __('Set how many seconds to wait before displaying the campaign.', 'skytake'),
     ))
 ]);
 
@@ -46,7 +46,7 @@ $panel->add_setting( 'scrolling_down_percentage', [
     'class' => 'scrolling_down_percentage_container' . ( in_array( $trigger_type, [ 'scroll', 'random' ] ) ? '' : ' __hidden'),
     'section' => 'general_settings',
     'output' => HTML::number(array( 
-        'title' => __('Vertical scroll percentage', 'skytake') . upgrade_tag(),
+        'title' => __('Scrolling down amount (%)', 'skytake') . upgrade_tag(),
         'name' => 'scrolling_down_percentage', 
         'value' =>  $campaign->setting('scrolling_down_percentage'),
         'min' => 1,
@@ -58,7 +58,7 @@ $panel->add_setting( 'skytake_reminder_notsub', [
     'output' => HTML::twoInputs(
         array(
             'title' => __('Subscription reminder ( Not subscribe )', 'skytake'),
-            'description' => __('Time to show popup again if visitor does not subscribe.', 'skytake'),
+            'description' => __('Time to show campaign again if visitor does not subscribe.', 'skytake'),
         ),
         HTML::number(array(
             'name' => 'reminder_number_notsub', 

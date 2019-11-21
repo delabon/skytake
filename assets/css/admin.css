@@ -1,4 +1,11 @@
 /*** CUSTOM ****/
+[class*="_page_skytake"] #wpcontent{
+	padding: 0;
+}
+
+.dlb_container #post-body{
+	width: 100%;
+}
 
 .column-name .button{
 	margin-bottom: 5px;

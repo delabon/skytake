@@ -103,6 +103,7 @@ class Editor{
             'ajaxurl' => admin_url( 'admin-ajax.php', 'relative' ),
             'skins_url' => SKYTAKE_URL . '/inc/skins/',
             'campaign_type' => $this->campaign->type(),
+            'is_premium' => is_premium(),
         ]);
     }
 

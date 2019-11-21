@@ -11,7 +11,8 @@
 *****************************************************/
 .skytake-bar,
 .skytake-bar *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .skytake-bar{
@@ -19,19 +20,23 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     display: inline-block;
     padding: 10px;
     background-color: purple;
     cursor: pointer;
+    -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
     visibility: hidden;
 }
 
 .skytake-bar.__show{
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     visibility: visible;
 }
 
@@ -59,7 +64,8 @@ body.admin-bar .skytake-bar[data-position="top_right"]{
 
 .skytake-bar:hover{
     opacity: 0.9;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
 }
 
 .skytake-bar span{
@@ -79,7 +85,11 @@ html.__skytake_opened > body{
 
 .skytake,
 .skytake *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.4;
 }
 
 .skytake-overlay{
@@ -117,7 +127,8 @@ html.__skytake_opened > body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate( -50%, -50% );
+    -webkit-transform: translate( -50%, -50% );
+            transform: translate( -50%, -50% );
     width: auto;
     height: auto;
     margin: 0; /* 0 fixes center issue */
@@ -127,7 +138,8 @@ html.__skytake_opened > body{
 
 .skytake-popup.__top_zero{
     top: 20px;
-    transform: translate( -50%, 0 );
+    -webkit-transform: translate( -50%, 0 );
+            transform: translate( -50%, 0 );
 }
 
 .skytake-close{
@@ -136,9 +148,15 @@ html.__skytake_opened > body{
     right: -12px;
     width: 24px;
     height: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background: #cccccc;
     color: #000;
     fill: #000;
@@ -147,7 +165,8 @@ html.__skytake_opened > body{
     outline: 0 !important;
     padding: 0 !important;
     margin: 0 !important;
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     cursor: pointer;
 }
 
@@ -157,6 +176,11 @@ html.__skytake_opened > body{
     background: #f1f1f1;
     color: #000;
     fill: #000;
+}
+
+.skytake-popup[data-layout="left"] .skytake-close{
+    left: -12px;
+    right: auto;
 }
 
 /* Container */
@@ -170,16 +194,27 @@ html.__skytake_opened > body{
 
 .skytake-content{
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 350px;
     width: 100% !important;
 }
 
 .skytake.__layout_right .skytake-content{
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .skytake .skytake-box-one{
@@ -191,7 +226,8 @@ html.__skytake_opened > body{
 
 .skytake .skytake-box-two{
     padding: 25px;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     max-width: 100%;
 }
 
@@ -207,14 +243,16 @@ html.__skytake_opened > body{
     position: absolute;
     top: 0;
     bottom: 0;
-    flex-basis: 38%;
+    -ms-flex-preferred-size: 38%;
+        flex-basis: 38%;
     width: 38%;
     max-width: 38%;
 }
 
 .skytake.__layout_left .skytake-box-two,
 .skytake.__layout_right .skytake-box-two{
-    flex-basis: 62%;
+    -ms-flex-preferred-size: 62%;
+        flex-basis: 62%;
     max-width: 62%;
 }
 
@@ -258,7 +296,6 @@ html.__skytake_opened > body{
 .skytake-title {
     font-size: 22px;
     font-weight: bold;
-    line-height: 1.4;
     margin: 0 0 15px;
     padding: 0;
 }
@@ -275,7 +312,6 @@ html.__skytake_opened > body{
 **/
 .skytake-urgency{
     text-transform: uppercase;
-    line-height: 1.4;
     margin-bottom: 15px;
     text-align: center;
     font-size: 14px;
@@ -297,9 +333,15 @@ html.__skytake_opened > body{
 .skytake-urgency-usage-limit,
 .skytake-urgency-timer{
     margin: 0 auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 4px 10px;
     overflow: hidden;
 }
@@ -312,7 +354,8 @@ html.__skytake_opened > body{
     background-color: #D4145A;
     margin: 0 5px;
     padding: 0.5em;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
 }
 
 .skytake-urgency-timer .__timer{ 
@@ -335,31 +378,41 @@ html.__skytake_opened > body{
 }
 
 .skytake-form-more{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .skytake-form-more input{
-    flex: 0 1 48.8%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48.8%;
+            flex: 0 1 48.8%;
     display: none;
 }
 
 .skytake-form-more[data-count="1"] input{
-    flex: 0 1 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
 }
 
 .skytake-form-more input.__show{
     display: block;
 }
 
-.skytake-name,
-.skytake-mobile,
-.skytake-email{
+.skytake-form input[type="email"],
+.skytake-form input[type="text"]{
     text-align: center;
-    font-size: 16px;
-    line-height: 1.4;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: inherit !important;
 
     width: 100%;
     height: auto;
@@ -368,16 +421,22 @@ html.__skytake_opened > body{
     
     color: #666;
     background-color: white;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
-    border: 0 !important;
+    -webkit-box-shadow: 2px 2px 5px rgba( 0, 0, 0, 0.15 );
+            box-shadow: 2px 2px 5px rgba( 0, 0, 0, 0.15 );
+    border: 0;
+    outline: 0 !important;
     border-radius: 0;
+
+    -webkit-transition: all 200ms;
+
+    transition: all 200ms;
 }
 
-.skytake-name:focus,
-.skytake-mobile:focus,
-.skytake-email:focus{
-    border-color: rgba(116, 185, 255, 0.7);
+.skytake-form input[type="email"]:focus,
+.skytake-form input[type="text"]:focus{
     outline: 0 !important;
+    -webkit-box-shadow: 2px 2px 5px rgba( 0, 0, 0, 0.3);
+            box-shadow: 2px 2px 5px rgba( 0, 0, 0, 0.3);
 }
 
 .skytake-form-more .skytake-mobile,
@@ -390,10 +449,10 @@ html.__skytake_opened > body{
     cursor: pointer;
     text-decoration: none;
     text-transform: initial;
-    
     font-size: 16px;
-    line-height: 1.4;
+    font-style: normal;    
     font-weight: normal;
+    font-family: inherit !important;
 
     width: 100%;
     height: auto;
@@ -403,7 +462,8 @@ html.__skytake_opened > body{
     border: 0;
     border-radius: 0;
     outline: 0;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
     color: white;
     background-color: #D4145A;
 }
@@ -427,7 +487,8 @@ html.__skytake_opened > body{
     background-color: white;
     border-radius: 100%;
     display: inline-block;
-    animation: skytake_loader 700ms infinite ease-in-out both;
+    -webkit-animation: skytake_loader 700ms infinite ease-in-out both;
+            animation: skytake_loader 700ms infinite ease-in-out both;
 }
 
 .skytake-form.__loading .skytake-submit .__loader{
@@ -447,8 +508,8 @@ html.__skytake_opened > body{
 }
 
 .skytake-gdpr-container{
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
     margin-top: 1em;
     position: relative;
 }
@@ -474,9 +535,15 @@ html.__skytake_opened > body{
 
 /** Social Icons */
 .skytake-social-icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 1em;
 }
 
@@ -487,15 +554,18 @@ html.__skytake_opened > body{
 .skytake-social-icons a{
     display: inline-block;
     margin: 0 7px;
+    -webkit-transition: all 100ms;
     transition: all 100ms;
     text-decoration: none !important;
 }
 
 .skytake-social-icons a:hover{
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 .skytake-social-icons span{
+    -webkit-transition: all 200ms ease;
     transition: all 200ms ease;
 }
 
@@ -541,8 +611,10 @@ body.admin-bar .skytake-floating-bar[data-position="top"]{
 
 .skytake-floating-bar .skytake-container{
     width: 100%;
+
     background-attachment: initial !important;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
 }
 
 .skytake-floating-bar .skytake-close{
@@ -550,7 +622,8 @@ body.admin-bar .skytake-floating-bar[data-position="top"]{
     top: 50%;
     right: 15px;
     left: auto;
-    transform: translate( 0, -50% );
+    -webkit-transform: translate( 0, -50% );
+            transform: translate( 0, -50% );
     -webkit-font-smoothing: subpixel-antialiased; /** fixes blurry text **/
 }
 
@@ -562,9 +635,15 @@ body.admin-bar .skytake-floating-bar[data-position="top"]{
 
 .skytake-floating-bar .skytake-view,
 .skytake-floating-bar .skytake-form{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .skytake-floating-bar .skytake-view.__response{
@@ -576,6 +655,8 @@ body.admin-bar .skytake-floating-bar[data-position="top"]{
 }
 
 .skytake-floating-bar.__show_response .skytake-view.__response{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -586,15 +667,16 @@ body.admin-bar .skytake-floating-bar[data-position="top"]{
 }
 
 .skytake-floating-bar .skytake-submit,
-.skytake-floating-bar .skytake-email{
+.skytake-floating-bar input[type="email"]{
     margin: 0 7px 0;
     font-size: 14px;
     padding: 7px 15px;
-    flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
     width: auto;
 }
 
-.skytake-floating-bar .skytake-email{
+.skytake-floating-bar input[type="email"]{
     min-width: 200px;
 }
 
@@ -612,7 +694,8 @@ body.admin-bar .skytake-floating-bar[data-position="top"]{
 .skytake-floating-bar .skytake-urgency-timer > div {
     margin: 0;
     border-radius: 0;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     display: inline-block;
 }
 
@@ -647,7 +730,8 @@ body.admin-bar .skytake-floating-bar[data-position="top"]{
 .skytake-scroll-box .skytake-container{
     width: 100%;
     background-attachment: initial !important;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.15);
+            box-shadow: 0 0 5px 2px rgba(0,0,0,0.15);
 }
 
 body.admin-bar .skytake-scroll-box[data-position="top_right"],
@@ -672,21 +756,25 @@ body.admin-bar .skytake-scroll-box[data-position="top_left"]{
     padding: 15px;
 }
 
-.skytake-scroll-box .skytake-name,
-.skytake-scroll-box .skytake-mobile,
 .skytake-scroll-box .skytake-submit,
-.skytake-scroll-box .skytake-email{
+.skytake-scroll-box input[type="email"],
+.skytake-scroll-box input[type="text"]{
     font-size: 14px;
     padding: 7px 15px;
 }
 
 .skytake-scroll-box .skytake-form-more{
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .skytake-scroll-box .skytake-form-more input{
-    flex: 0 1 auto;
-    flex-basis: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     max-width: 100%;
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -733,14 +821,16 @@ body.admin-bar .skytake-scroll-box[data-position="top_left"]{
 .skytake-widget-form .skytake-container{
     width: 100%;
     background-attachment: initial !important;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
 }
 
 body.skytake-preview-active .skytake-widget-form{
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate( -50%, -50% );
+    -webkit-transform: translate( -50%, -50% );
+            transform: translate( -50%, -50% );
     width: 300px;
 
     -webkit-font-smoothing: subpixel-antialiased; /** fixes blurry text **/
@@ -760,21 +850,25 @@ body.skytake-preview-active .skytake-widget-form{
     padding: 15px;
 }
 
-.skytake-widget-form .skytake-name,
-.skytake-widget-form .skytake-mobile,
-.skytake-widget-form .skytake-submit,
-.skytake-widget-form .skytake-email{
+.skytake-widget-form input[type="text"],
+.skytake-widget-form input[type="email"],
+.skytake-widget-form .skytake-submit{
     font-size: 14px;
     padding: 7px 15px;
 }
 
 .skytake-widget-form .skytake-form-more{
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .skytake-widget-form .skytake-form-more input{
-    flex: 0 1 auto;
-    flex-basis: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     max-width: 100%;
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -795,16 +889,20 @@ body.skytake-preview-active .skytake-widget-form{
 }
 
 .skytake-content-form .skytake-container{
+    margin: 0 auto;
     width: 100%;
     background-attachment: initial !important;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
 }
 
 body.skytake-preview-active .skytake-content-form{
+    margin: 0 !important;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate( -50%, -50% );
+    -webkit-transform: translate( -50%, -50% );
+            transform: translate( -50%, -50% );
     width: 650px;
 
     -webkit-font-smoothing: subpixel-antialiased; /** fixes blurry text **/

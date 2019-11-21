@@ -1,8 +1,8 @@
 === Skytake - Wordpress Leads & Woocommerce Sales ===
 Contributors: delabon
 Requires at least: 4.6
-Tested up to: 5.2.3
-Stable tag: 0.22.0
+Tested up to: 5.3
+Stable tag: 0.34.0
 Requires PHP: 5.4
 Tags: mailchimp, woocommerce, coupon, woocommerce coupon, marketing, email marketing, lead, lead generation
 License: GPLv2 or later
@@ -12,13 +12,41 @@ Skytake is a Wordpress lead generation plugin that allows you to grow your email
 
 == Description ==
 
-Skytake is a Wordpress lead generation plugin and/or a sales booster for Woocommerce.
+Skytake is a very powerful WordPress lead generation solution. 
+It comes with many perfect campaign types that are proven to convert your visitors into leads and customers.
 
-Create campaigns and customize your optin lighbox popups easily to give them that “personal” touch.
+With Skytake visual editor you can customize your campaigns from one place to give them that “personal” touch. No coding skills required!
 
 With *Skytake Woocommerce coupon feature* you can offer coupons to encourage your visitors to subscribe to your email list and buy your products or services.
 
 Skytake will auto add your subscribes to your email list on your website and to your Mailchimp audience.
+
+== Campaign Types ==
+
+* Lightbox Popup.
+* Floating Bar.
+* Scroll Box.
+* Widget Form.
+* Inline Form.
+
+== Campaign Triggers ==
+
+* When a visitor is about to exit.
+* After X amount.
+
+== Features ==
+
+* Views: Optin/Success.
+* Visual editor (Customize and config your campaign from one place).
+* Proven to convert campaigns.
+* Welcome email.
+* Minimized bar.
+* Social media icons.
+* Woocommerce coupons.
+* Mailchimp.
+* Ready templates.
+* GDPR ready.
+* PHP 7 ready.
 
 == Installation ==
 
@@ -51,6 +79,6 @@ Absolutely Yes! you can use it on your client sites.
 
 == Changelog ==
 
-= 0.22.0 =
+= 0.34.0 =
 
 * Release

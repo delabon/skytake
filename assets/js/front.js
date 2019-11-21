@@ -66,7 +66,7 @@
     *************************************************/
     function App( settings ){
 
-        this.allowLog = true;
+        this.allowLog = false;
         this.settings = settings;
         this.id = settings.campaign_id;
         this.type = settings.campaign_type;
@@ -203,6 +203,7 @@
         
         this.log('# Hide bar called');
 
+        if( this.isSubscribePaused() ) return;
         if( ! this.ui.hasOwnProperty('bar') ) return;
 
         this.ui.bar.addClass('__show');

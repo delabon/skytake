@@ -31,10 +31,43 @@ body.skytake-editor-active{
 	overflow: hidden;
 }
 
+.skytake_upgrade_popup,
 #skytake_editor,
 #skytake_editor *{
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
+}
+
+.skytake_upgrade_popup{
+    z-index: 999999;
+	position: fixed;
+	top: 30px;
+	left: 50%;
+    -webkit-transform: translate( -50%, 0 );
+            transform: translate( -50%, 0 );
+    width: 400px;
+    max-width: 100%;
+    padding: 20px;
+	background-color: white;
+	color: #222222;
+    -webkit-box-shadow: 0 0 20px 5px rgba( 250, 250, 250, 0.3);
+            box-shadow: 0 0 20px 5px rgba( 250, 250, 250, 0.3);
+    display: none;
+}
+
+.skytake_upgrade_popup span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.skytake_upgrade_popup p{
+    padding: 0;
+    margin: 0 0 15px;
 }
 
 #skytake_editor{
@@ -537,5 +570,10 @@ body.free .skt__setting_is_input_name_enabled{
 
 #skytake_editor[data-template="bubble_sky"] .skt__setting_layout,
 #skytake_editor[data-template="bubble_sky_2"] .skt__setting_layout{
+	display: none;
+}
+
+#skytake_editor[data-template="classic"] .skt__setting_layout,
+#skytake_editor[data-template="classic"] .skt__setting_main_image{
 	display: none;
 }

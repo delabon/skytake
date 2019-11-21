@@ -111,6 +111,10 @@ $panel->add_setting( 'template', [
         'name' => 'template',
         'value' => $campaign->setting('template'),
         'items' => array(
+            'classic' => array(
+                'url' => SKYTAKE_URL . '/assets/img/templates/popup/classic.png',
+                'title' => __('Classic', 'skytake'),
+            ),
             'bubble_sky' => array(
                 'url' => SKYTAKE_URL . '/assets/img/templates/popup/default.png',
                 'title' => __('Bubble Sky', 'skytake'),
@@ -119,6 +123,10 @@ $panel->add_setting( 'template', [
                 'url' => SKYTAKE_URL . '/assets/img/templates/popup/bubble_sky_vertical.png',
                 'title' => __('Bubble Sky Vertical', 'skytake'),
             ),
+            // 'fashion' => array(
+            //     'url' => SKYTAKE_URL . '/assets/img/templates/popup/fashion.png',
+            //     'title' => __('Fashion', 'skytake'),
+            // ),
             // 'black_friday__premium_only' => array(
             //     'url' => SKYTAKE_URL . '/assets/img/templates/popup/cyber_monday.png',
             //     'title' => __('Black Friday', 'skytake'),

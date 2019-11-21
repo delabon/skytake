@@ -13,6 +13,8 @@ return array(
         "raleway"           => [ 'Raleway:400,700', "'Raleway', sans-serif" ],
         "pt_sans"           => [ 'PT+Sans:400,700', "'PT Sans', sans-serif" ],
         "lora"              => [ 'Lora:400,700', "'Lora', serif" ],
+        "crimson_text"      => [ 'Crimson+Text:400,700', "'Crimson Text', serif" ],
+        "neuton"            => [ 'Neuton:400,700', "'Neuton', serif" ],
     ),
 
     'font_items' => array(
@@ -26,6 +28,8 @@ return array(
         "raleway"           => 'Raleway',
         "pt_sans"           => 'PT Sans',
         "lora"              => 'Lora',
+        "crimson_text"      => 'Crimson Text',
+        "neuton"            => 'Neuton',
     ),
 
     'campaign_types' => array(
@@ -71,7 +75,7 @@ return array(
         'filter_hide_on_articles'   => 0,
 
         // minimized bar
-        'display_minimized_bar'     => 'close',
+        'display_minimized_bar'     => 'never',
         'minimized_bar_position'    => 'bottom_right',
         'minimized_bar_icon'        => 'dlbgifticon-1',
         'minimized_bar_size'        => 40, 
@@ -122,7 +126,7 @@ Include the gift URL or if you are using Woocommerce use the shortcodes to
 include the coupon code and the store button ex: [store_button].",
         
         // style
-        'template'              => 'bubble_sky',
+        'template'              => 'classic',
         'layout'                => 'fullwidth',
         'animation'             => 'none',
         'overlay_color'         => 'rgba(0, 0, 0, 0.8)',

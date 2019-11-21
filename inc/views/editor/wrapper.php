@@ -89,6 +89,12 @@ else{
 			<iframe src="<?php echo admin_url('admin.php?action=skytake_preview&campaign_id='.$campaign->id() ); ?>"></iframe>
 		</div>
 
+		<div class="skytake_upgrade_popup">
+			<p><?php _e('Upgrade now and access to our premier templates, urgency and more!', 'skytake') ?></p>
+			<a class="button" href="<?php echo SKYTAKE_UPGRADE_URL; ?>" target="_blank" ><?php _e('Upgrade Now', 'skytake') ?></a>
+			<span>&times;</span>
+		</div>
+
 	</div>
 
 	<div id="skytake_loader">

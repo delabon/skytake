@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Skytake Leads & Sales plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Skytake Leads & Sales 0.19.0\n"
+"Project-Id-Version: Skytake Leads & Sales 0.34.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/skytake\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-10-16T07:37:23+02:00\n"
+"POT-Creation-Date: 2019-11-20T14:31:43+01:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.2.0\n"
 "X-Domain: skytake\n"
@@ -19,7 +19,7 @@ msgid "Skytake Leads & Sales"
 msgstr ""
 
 #. Description of the plugin
-msgid "Increase your leads & sales today!"
+msgid "Increase your leads & sales TODAY!"
 msgstr ""
 
 #. Author of the plugin
@@ -30,1008 +30,1234 @@ msgstr ""
 msgid "https://delabon.com"
 msgstr ""
 
-#: lib/class-subscriber-list-table.php:13
-msgid "Subscriber"
+#: lib/delabon/wp/panel/views/panel.php:28
+msgid "You may need!"
 msgstr ""
 
-#: lib/class-subscriber-list-table.php:14
-#: lib/class-backend.php:152
-#: lib/class-backend.php:153
-#: lib/class-backend.php:271
-msgid "Subscribers"
-msgstr ""
-
-#: lib/class-subscriber-list-table.php:69
-msgid "Email"
-msgstr ""
-
-#: lib/class-subscriber-list-table.php:70
-msgid "Name/Mobile"
-msgstr ""
-
-#: lib/class-subscriber-list-table.php:71
-msgid "Coupon code"
-msgstr ""
-
-#: lib/class-subscriber-list-table.php:72
-msgid "Date"
-msgstr ""
-
-#: lib/views/tabs/filters.php:16
-msgid "Logged-in users"
-msgstr ""
-
-#: lib/views/tabs/filters.php:18
-msgid "Enable to show coupon popup for all logged-in users"
-msgstr ""
-
-#: lib/views/tabs/filters.php:19
-#: lib/views/tabs/filters.php:27
-#: lib/views/tabs/filters.php:33
-#: lib/views/tabs/woocommerce.php:41
-#: lib/views/tabs/email.php:21
-#: lib/views/tabs/mailchimp.php:41
-#: lib/views/tabs/mailchimp.php:65
-msgid "Enable"
-msgstr ""
-
-#: lib/views/tabs/filters.php:24
-msgid "Administrator"
-msgstr ""
-
-#: lib/views/tabs/filters.php:26
-msgid "Enable to show coupon popup for administrator(s)"
-msgstr ""
-
-#: lib/views/tabs/filters.php:32
-msgid "Hide on all articles"
-msgstr ""
-
-#: lib/views/tabs/filters.php:39
-msgid "Show / Hide on all pages"
-msgstr ""
-
-#: lib/views/tabs/filters.php:40
-msgid "Add the pages exluded below."
-msgstr ""
-
-#: lib/views/tabs/filters.php:44
-msgid "Show"
-msgstr ""
-
-#: lib/views/tabs/filters.php:45
-#: lib/skins/tmpl-popup-default.php:60
-msgid "Hide"
-msgstr ""
-
-#: lib/views/tabs/filters.php:50
-msgid "Pages Excluded"
-msgstr ""
-
-#: lib/views/tabs/filters.php:51
-msgid "Add the excluded pages URL's here. ex:"
-msgstr ""
-
-#: lib/views/tabs/filters.php:64
-#: lib/views/tabs/woocommerce.php:64
-#: lib/views/tabs/urgency.php:118
-#: lib/views/tabs/email.php:49
-#: lib/views/tabs/mailchimp.php:82
-#: lib/views/tabs/general.php:106
-#: lib/views/template_editor/panel.php:17
-msgid "Save"
-msgstr ""
-
-#: lib/views/tabs/woocommerce.php:40
-msgid "Enable Woocommerce Coupon"
-msgstr ""
-
-#: lib/views/tabs/woocommerce.php:42
-msgid "Enable this option if you want to offer a coupon code for your customers."
-msgstr ""
-
-#: lib/views/tabs/woocommerce.php:44
-msgid "Disable this option when your coupon expire, If you want to keep collecting emails."
-msgstr ""
-
-#: lib/views/tabs/woocommerce.php:50
-msgid "Select coupon"
-msgstr ""
-
-#: lib/views/tabs/woocommerce.php:51
-msgid "Do not have any coupon yet?"
-msgstr ""
-
-#: lib/views/tabs/woocommerce.php:51
-msgid "Create New One"
-msgstr ""
-
-#: lib/views/tabs/urgency.php:11
-#: lib/views/tabs/urgency.php:15
-msgid "Expiry date"
-msgstr ""
-
-#: lib/views/tabs/urgency.php:13
-msgid "Disabled"
-msgstr ""
-
-#: lib/views/tabs/urgency.php:14
-msgid "Visitor session"
-msgstr ""
-
-#: lib/views/tabs/urgency.php:20
-#: lib/views/tabs/urgency.php:21
-msgid "Coupon expiry date"
-msgstr ""
-
-#: lib/views/tabs/urgency.php:22
-#: lib/views/tabs/urgency.php:103
-msgid "Coupon usage limit"
-msgstr ""
-
-#: lib/views/tabs/urgency.php:51
-msgid "Urgency (Countdown Timer)"
-msgstr ""
-
-#: lib/views/tabs/urgency.php:54
-msgid "\"Visitor Session\", each visitor has urgency session time (Best)."
-msgstr ""
-
-#: lib/views/tabs/urgency.php:61
-msgid "Session time"
-msgstr ""
-
-#: lib/views/tabs/urgency.php:73
-#: lib/views/tabs/general.php:77
-msgid "Minute(s)"
-msgstr ""
-
-#: lib/views/tabs/urgency.php:74
-#: lib/views/tabs/general.php:78
-msgid "Hour(s)"
-msgstr ""
-
-#: lib/views/tabs/urgency.php:75
-#: lib/views/tabs/urgency.php:90
-#: lib/views/tabs/general.php:79
-#: lib/views/tabs/general.php:96
-msgid "Day(s)"
-msgstr ""
-
-#: lib/views/tabs/urgency.php:83
-msgid "Re-create session after"
-msgstr ""
-
-#: lib/views/tabs/urgency.php:99
-msgid "Set coupon expiry date."
-msgstr ""
-
-#: lib/views/tabs/urgency.php:108
-msgid "Set usage limit before coupon expire."
-msgstr ""
-
-#: lib/views/tabs/email.php:16
-msgid "Send Email When Subscribe"
-msgstr ""
-
-#: lib/views/tabs/email.php:17
-msgid "It will be sent automatically after a visitor subscribe."
-msgstr ""
-
-#: lib/views/tabs/email.php:18
-msgid "Useful when offering a coupon code or something to download."
-msgstr ""
-
-#: lib/views/tabs/email.php:25
-msgid "Subject"
-msgstr ""
-
-#: lib/views/tabs/email.php:31
-msgid "Content"
-msgstr ""
-
-#: lib/views/tabs/email.php:36
-msgid "Fixed value or percentage, depending on discount type you have chosen."
-msgstr ""
-
-#: lib/views/tabs/email.php:37
-msgid "Code used by the customer to apply the coupon."
-msgstr ""
-
-#: lib/views/tabs/email.php:38
-msgid "Date the coupon should expire and can no longer be used."
-msgstr ""
-
-#: lib/views/tabs/email.php:39
-msgid "When clicked customers will be redirected to your shop."
-msgstr ""
-
-#: lib/views/tabs/design.php:16
-msgid "Select template"
-msgstr ""
-
-#: lib/views/tabs/design.php:19
-msgid "This setting is auto-saved on change."
-msgstr ""
-
-#: lib/views/tabs/design.php:21
-msgid "Default"
-msgstr ""
-
-#: lib/views/tabs/design.php:22
-msgid "Default Vertical"
-msgstr ""
-
-#: lib/views/tabs/design.php:23
-msgid "Black Friday"
-msgstr ""
-
-#: lib/views/tabs/design.php:24
-msgid "Black Friday Vertical"
-msgstr ""
-
-#: lib/views/tabs/design.php:25
-msgid "Cyber Monday"
-msgstr ""
-
-#: lib/views/tabs/design.php:26
-msgid "Cyber Monday Vertical"
-msgstr ""
-
-#: lib/views/tabs/design.php:27
-msgid "Christmas"
-msgstr ""
-
-#: lib/views/tabs/design.php:28
-msgid "Christmas Vertical"
-msgstr ""
-
-#: lib/views/tabs/design.php:29
-msgid "Valentine's Day"
-msgstr ""
-
-#: lib/views/tabs/design.php:30
-msgid "Valentine's Day Vertical"
-msgstr ""
-
-#: lib/views/tabs/design.php:31
-msgid "Halloween Vertical"
-msgstr ""
-
-#: lib/views/tabs/design.php:32
-msgid "Womens's Day"
-msgstr ""
-
-#: lib/views/tabs/design.php:33
-msgid "Womens's Day Vertical"
-msgstr ""
-
-#: lib/views/tabs/design.php:34
-msgid "Men's Day"
-msgstr ""
-
-#: lib/views/tabs/design.php:35
-msgid "Men's Day Vertical"
-msgstr ""
-
-#: lib/views/tabs/design.php:51
-msgid "Edit Template"
-msgstr ""
-
-#: lib/views/tabs/mailchimp.php:10
-msgid "Select List"
-msgstr ""
-
-#: lib/views/tabs/mailchimp.php:38
-msgid "Enable Mailchimp"
-msgstr ""
-
-#: lib/views/tabs/mailchimp.php:45
-#: lib/views/tabs/mailchimp.php:46
-msgid "API Key"
-msgstr ""
-
-#: lib/views/tabs/mailchimp.php:46
-msgid "Get your API key from here:"
-msgstr ""
-
-#: lib/views/tabs/mailchimp.php:52
-msgid "Lists"
-msgstr ""
-
-#: lib/views/tabs/mailchimp.php:54
-msgid "Lists are where you store your subscriber’s information."
-msgstr ""
-
-#: lib/views/tabs/mailchimp.php:55
-msgid "To see your Mailchimp lists, add your API key then click on the save button"
-msgstr ""
-
-#: lib/views/tabs/mailchimp.php:62
-msgid "Enable Campaign"
-msgstr ""
-
-#: lib/views/tabs/mailchimp.php:69
-msgid "Campaign API URL"
-msgstr ""
-
-#: lib/views/tabs/mailchimp.php:70
-msgid "Check out the documentation if you do not know where to get this url from."
-msgstr ""
-
-#: lib/views/tabs/general.php:19
-msgid "Campaign Name"
-msgstr ""
-
-#: lib/views/tabs/general.php:25
-msgid "Popup trigger"
-msgstr ""
-
-#: lib/views/tabs/general.php:29
-msgid "When a visitor is about to exit."
-msgstr ""
-
-#: lib/views/tabs/general.php:30
-msgid "After X seconds."
-msgstr ""
-
-#: lib/views/tabs/general.php:31
-msgid "After scrolling down X amount."
-msgstr ""
-
-#: lib/views/tabs/general.php:32
-msgid "Random."
-msgstr ""
-
-#: lib/views/tabs/general.php:37
-msgid "Display popup after"
-msgstr ""
-
-#: lib/views/tabs/general.php:40
-msgid "Set how many seconds to wait before displaying the popup."
-msgstr ""
-
-#: lib/views/tabs/general.php:44
-msgid "Vertical scroll percentage"
-msgstr ""
-
-#: lib/views/tabs/general.php:51
-msgid "Display minimized bar"
-msgstr ""
-
-#: lib/views/tabs/general.php:55
-msgid "When a visitor close popup without subscribing."
-msgstr ""
-
-#: lib/views/tabs/general.php:56
-msgid "Never."
-msgstr ""
-
-#: lib/views/tabs/general.php:57
-msgid "Always."
-msgstr ""
-
-#: lib/views/tabs/general.php:59
-msgid "You can set the box position, size, icon & colors from the design tab."
-msgstr ""
-
-#: lib/views/tabs/general.php:64
-msgid "Subscription reminder ( Not subscribe )"
-msgstr ""
-
-#: lib/views/tabs/general.php:65
-msgid "Time to show popup again if visitor does not subscribe."
-msgstr ""
-
-#: lib/views/tabs/general.php:87
-msgid "Subscription reminder ( subscribe )"
-msgstr ""
-
-#: lib/views/tabs/general.php:88
-msgid "Sometime a subscriber unsubscribe. Setting a reminded after an amount of time is a smart idea."
-msgstr ""
-
-#: lib/views/template_editor/panel.php:18
-msgid "Exit"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:29
-#: lib/views/template_editor/panel.php:30
-msgid "Optin"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:33
-#: lib/views/template_editor/panel.php:34
-msgid "Success"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:37
-#: lib/views/template_editor/panel.php:38
-msgid "Style"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:41
-#: lib/views/template_editor/panel.php:42
-msgid "Social Media"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:45
-#: lib/views/template_editor/panel.php:46
-#: lib/class-campaign-list-table.php:131
-msgid "Minimized Bar"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:49
-#: lib/views/template_editor/panel.php:50
-#: lib/class-backend.php:372
-#: lib/class-campaign-list-table.php:124
-msgid "Urgency"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:59
-#: lib/views/template_editor/panel.php:164
-msgid "Title"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:68
-#: lib/views/template_editor/panel.php:173
-msgid "Message"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:78
-msgid "Enable Name Input"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:88
-msgid "Name Input Text"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:98
-msgid "Enable Mobile Input"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:107
-msgid "Mobile Input Text"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:116
-msgid "Email Input Text"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:125
-msgid "Submit Button Text"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:134
-msgid "Spam Text"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:143
-msgid "Enable GDPR Checkbox"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:152
-msgid "GDPR Text"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:185
-msgid "Display Animation"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:189
-msgid "None"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:190
-msgid "Fade"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:191
-msgid "Scale out"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:192
-msgid "Scale in"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:193
-msgid "Slide in from top"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:194
-msgid "Slide in from bottom"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:195
-msgid "Slide in from right"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:196
-msgid "Slide in from left"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:197
-msgid "Spin"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:198
-msgid "3D: Rotate from top"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:199
-msgid "3D: Rotate from bottom"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:200
-msgid "3D: Rotate from right"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:201
-msgid "3D: Rotate from left"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:209
-msgid "Overlay Color"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:221
-msgid "Layout"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:234
-msgid "Form Margin Top (px)"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:244
-#: lib/views/template_editor/panel.php:614
-msgid "Background Color"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:253
-msgid "Background Image"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:256
-msgid "Select/Upload image"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:263
-msgid "Background Image Position"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:283
-msgid "Background Image Size"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:298
-msgid "Background Image Repeat"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:316
-msgid "Title Color"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:325
-msgid "Title Font Size (px)"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:334
-msgid "Body Text Color"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:343
-msgid "Body Font Size (px)"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:352
-msgid "Email Input Text Color"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:361
-msgid "Email Input Background Color"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:370
-msgid "Email Input Font Size (px)"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:379
-msgid "Button Color"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:388
-msgid "Button Background color"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:397
-msgid "Close Icon Color"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:406
-msgid "Close Icon Background Color"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:419
-msgid "Open Links In New Tabs"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:428
-msgid "Icons Design"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:438
-msgid "Icons Size (px)"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:447
-msgid "Social Icons Color Type"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:451
-msgid "Default Colors"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:452
-msgid "Custom Color"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:460
-msgid "Social Icons Color"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:470
-msgid "Facebook Username"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:481
-msgid "Twitter Username"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:492
-msgid "Instagram Username"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:503
-msgid "Pinterest Username"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:514
-msgid "Linkedin Username"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:525
-msgid "Youtube URL"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:539
-msgid "Position"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:543
-msgid "Bottom Right"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:544
-msgid "Bottom Left"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:545
-msgid "Top Right"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:546
-msgid "Top Left"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:555
-msgid "Size (px)"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:565
-msgid "Select Icon"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:575
-msgid "Icon Color"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:584
-msgid "Minimized Bar Background Color"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:596
-msgid "Font Size (px)"
-msgstr ""
-
-#: lib/views/template_editor/panel.php:605
-msgid "Text Color"
-msgstr ""
-
-#: lib/functions.php:14
-msgid "Upgrade"
-msgstr ""
-
-#: lib/functions.php:110
-msgid "Coupon List"
-msgstr ""
-
-#: lib/functions.php:167
-msgid "%"
-msgstr ""
-
-#: lib/functions.php:442
-msgid "Invalid Mailchimp API key."
-msgstr ""
-
-#: lib/functions.php:476
-#: lib/functions.php:515
-msgid "Invalid email address."
-msgstr ""
-
-#: lib/functions.php:480
-msgid "Invalid Mailchimp list id."
-msgstr ""
-
-#: lib/functions.php:521
-#: lib/functions.php:525
-msgid "Invalid Mailchimp campaign url."
-msgstr ""
-
-#: lib/skins/urgency__premium_only.php:8
+#: inc/class-campaign-ui.php:65
 msgid "%d coupon left"
 msgid_plural "%d coupons left"
 msgstr[0] ""
 msgstr[1] ""
 
-#: lib/skins/urgency__premium_only.php:15
-msgid "D"
+#: inc/class-widget.php:19
+msgid "Skytake Widget"
 msgstr ""
 
-#: lib/skins/urgency__premium_only.php:20
-msgid "HR"
+#: inc/class-widget.php:20
+msgid "Skytake Widget Form"
 msgstr ""
 
-#: lib/skins/urgency__premium_only.php:25
-msgid "MS"
+#: inc/class-widget.php:60
+msgid "Select Campaign:"
 msgstr ""
 
-#: lib/skins/urgency__premium_only.php:30
-msgid "SEC"
+#: inc/class-subscriber-list-table.php:13
+msgid "Subscriber"
 msgstr ""
 
-#: lib/delabon/wp/panel/views/panel.php:28
-msgid "You may need!"
+#: inc/class-subscriber-list-table.php:14
+#: inc/class-backend.php:107
+#: inc/class-backend.php:108
+#: inc/class-backend.php:233
+msgid "Subscribers"
 msgstr ""
 
-#: lib/class-backend.php:58
-msgid "Are you sure?"
+#: inc/class-subscriber-list-table.php:69
+msgid "Email"
 msgstr ""
 
-#: lib/class-backend.php:59
-msgid "Are you sure? activating this campaign will deactivate any active campain."
+#: inc/class-subscriber-list-table.php:70
+msgid "Name/Mobile"
 msgstr ""
 
-#: lib/class-backend.php:143
-msgid "skytake Campaigns"
+#: inc/class-subscriber-list-table.php:71
+msgid "Coupon code"
 msgstr ""
 
-#: lib/class-backend.php:144
-#: lib/class-backend.php:242
-#: lib/class-campaign-list-table.php:15
-msgid "Campaigns"
+#: inc/class-subscriber-list-table.php:72
+msgid "Date"
 msgstr ""
 
-#: lib/class-backend.php:163
-#: lib/class-backend.php:164
-msgid "New campaign"
-msgstr ""
-
-#: lib/class-backend.php:175
-#: lib/class-backend.php:176
-msgid "Edit campaign"
-msgstr ""
-
-#: lib/class-backend.php:187
-#: lib/class-backend.php:188
-msgid "Edit template"
-msgstr ""
-
-#: lib/class-backend.php:197
-#: lib/class-backend.php:198
-#: lib/class-backend.php:363
-msgid "Documentation"
-msgstr ""
-
-#: lib/class-backend.php:208
-#: lib/class-backend.php:209
-msgid "Get Support"
-msgstr ""
-
-#: lib/class-backend.php:220
-#: lib/class-backend.php:221
-msgid "Try Premium Version"
-msgstr ""
-
-#: lib/class-backend.php:243
-msgid "Add New"
-msgstr ""
-
-#: lib/class-backend.php:272
-msgid "Export All"
-msgstr ""
-
-#: lib/class-backend.php:298
-msgid "Export all emails to CSV"
-msgstr ""
-
-#: lib/class-backend.php:299
-msgid "Leave start date empty to export all emails."
-msgstr ""
-
-#: lib/class-backend.php:304
-msgid "Start date"
-msgstr ""
-
-#: lib/class-backend.php:306
-msgid "Export Now"
-msgstr ""
-
-#: lib/class-backend.php:364
+#: inc/views/admin/header.php:11
 msgid "Version"
 msgstr ""
 
-#: lib/class-backend.php:365
-msgid "Settings Are Saved."
+#: inc/views/admin/buttons.php:1
+#: inc/class-backend.php:116
+#: inc/class-backend.php:117
+msgid "Documentation"
 msgstr ""
 
-#: lib/class-backend.php:370
-msgid "General"
+#: inc/views/admin/buttons.php:2
+msgid "Support"
 msgstr ""
 
-#: lib/class-backend.php:371
-msgid "Woocommerce"
+#: inc/views/admin/buttons.php:3
+msgid "More Plugins"
 msgstr ""
 
-#: lib/class-backend.php:373
-msgid "Mailchimp"
+#: inc/views/editor/wrapper.php:41
+msgid "Skytake Editor"
 msgstr ""
 
-#: lib/class-backend.php:374
-msgid "Welcome Email"
-msgstr ""
-
-#: lib/class-backend.php:375
-msgid "Design"
-msgstr ""
-
-#: lib/class-backend.php:376
-msgid "Filters"
-msgstr ""
-
-#: lib/class-backend.php:487
-msgid "Please activate one of your Skytake campaigns."
-msgstr ""
-
-#: lib/class-backend.php:500
-msgid "Please install & activate Woocommerce to use Skytake Woocommerce Coupon feature."
-msgstr ""
-
-#: lib/class-backend.php:514
-msgid "The coupon you have selected for Skytake active campaign has expired!"
-msgstr ""
-
-#: lib/class-backend.php:515
-msgid "Please select a new coupon or disable Skytake Woocommerce coupon feature."
-msgstr ""
-
-#: lib/class-backend.php:525
-msgid "You have enabled Skytake Woocommerce coupon feature for your active campaign but you did not select a coupon!"
-msgstr ""
-
-#: lib/class-backend.php:536
-msgid "You did not set Skytake \"Coupon expire date\" for your active campaign. Please select a date or disable urgency."
-msgstr ""
-
-#: lib/class-backend.php:543
-msgid "You did not set Skytake \"Coupon usage limit\" for your active campaign. Please select a usage limit or disable urgency."
-msgstr ""
-
-#: lib/class-backend.php:570
-msgid "Hi there! you have been using <strong>Skytake Leads & Sales</strong> for few days. I hope it is helpful."
-msgstr ""
-
-#: lib/class-backend.php:574
-msgid "Would you mind give it 5-stars review to help spread the word? And to keep me updating it & adding more features to it!"
-msgstr ""
-
-#: lib/class-backend.php:576
-msgid "Would you want to get awesome features?"
-msgstr ""
-
-#: lib/class-backend.php:637
-msgid "Codecanyon Purchase Validation"
-msgstr ""
-
-#: lib/class-backend.php:642
-msgid "Email Address"
-msgstr ""
-
-#: lib/class-backend.php:643
-msgid "Purchase Code"
-msgstr ""
-
-#: lib/class-backend.php:647
-msgid "I agree with the <a href=\"https://delabon.com/terms\" target=\"_blank\">terms</a> and <a href=\"https://delabon.com/privacy-policy\" target=\"_blank\">privacy policy</a>."
-msgstr ""
-
-#: lib/class-backend.php:650
-msgid "Validate"
-msgstr ""
-
-#: lib/class-ajax.php:45
-msgid "Invalid Email"
-msgstr ""
-
-#: lib/class-ajax.php:49
-msgid "Invalid Purchase Code"
-msgstr ""
-
-#: lib/class-ajax.php:393
-msgid "Invalid Camapaign."
-msgstr ""
-
-#: lib/class-ajax.php:397
-msgid "Invalid Email."
-msgstr ""
-
-#: lib/class-ajax.php:507
-msgid "Shop Now"
-msgstr ""
-
-#: lib/class-campaign-list-table.php:14
+#: inc/views/editor/wrapper.php:65
+#: inc/class-campaign-list-table.php:14
 msgid "Campaign"
 msgstr ""
 
-#: lib/class-campaign-list-table.php:61
+#: inc/views/editor/wrapper.php:76
+msgid "Live?"
+msgstr ""
+
+#: inc/views/editor/wrapper.php:80
+msgid "Save"
+msgstr ""
+
+#: inc/views/editor/wrapper.php:93
+msgid "Upgrade now and access to our premier templates, urgency and more!"
+msgstr ""
+
+#: inc/views/editor/wrapper.php:94
+msgid "Upgrade Now"
+msgstr ""
+
+#: inc/views/editor/panel-settings/optin.php:16
+#: inc/campaigns/widget-form/panel.php:328
+#: inc/campaigns/content-form/panel.php:191
+#: inc/campaigns/content-form/panel.php:472
+#: inc/campaigns/scroll-box/panel.php:321
+#: inc/campaigns/popup/panel.php:366
+#: inc/campaigns/floating-bar/panel.php:335
+msgid "Select/Upload image"
+msgstr ""
+
+#: inc/views/editor/panel-settings/optin.php:23
+#: inc/views/editor/panel-settings/success.php:12
+#: inc/campaigns/content-form/panel.php:198
+#: inc/campaigns/content-form/panel.php:300
+#: inc/campaigns/floating-bar/panel.php:156
+#: inc/campaigns/floating-bar/panel.php:187
+msgid "Title"
+msgstr ""
+
+#: inc/views/editor/panel-settings/optin.php:32
+#: inc/views/editor/panel-settings/success.php:21
+#: inc/campaigns/content-form/panel.php:207
+#: inc/campaigns/content-form/panel.php:309
+msgid "Message"
+msgstr ""
+
+#: inc/views/editor/panel-settings/optin.php:41
+#: inc/campaigns/content-form/panel.php:216
+msgid "Enable Name Input"
+msgstr ""
+
+#: inc/views/editor/panel-settings/optin.php:50
+#: inc/campaigns/content-form/panel.php:225
+msgid "Name Input Text"
+msgstr ""
+
+#: inc/views/editor/panel-settings/optin.php:59
+#: inc/campaigns/content-form/panel.php:234
+msgid "Enable Mobile Input"
+msgstr ""
+
+#: inc/views/editor/panel-settings/optin.php:68
+#: inc/campaigns/content-form/panel.php:243
+msgid "Mobile Input Text"
+msgstr ""
+
+#: inc/views/editor/panel-settings/optin.php:77
+#: inc/campaigns/content-form/panel.php:252
+#: inc/campaigns/floating-bar/panel.php:165
+msgid "Email Input Text"
+msgstr ""
+
+#: inc/views/editor/panel-settings/optin.php:86
+#: inc/campaigns/content-form/panel.php:261
+#: inc/campaigns/floating-bar/panel.php:174
+msgid "Submit Button Text"
+msgstr ""
+
+#: inc/views/editor/panel-settings/optin.php:95
+#: inc/campaigns/content-form/panel.php:270
+msgid "Spam Text"
+msgstr ""
+
+#: inc/views/editor/panel-settings/optin.php:104
+#: inc/campaigns/content-form/panel.php:279
+msgid "Enable GDPR Checkbox"
+msgstr ""
+
+#: inc/views/editor/panel-settings/optin.php:113
+#: inc/campaigns/content-form/panel.php:288
+msgid "GDPR Text"
+msgstr ""
+
+#: inc/views/editor/panel-settings/minimized-bar.php:13
+msgid "Display minimized bar"
+msgstr ""
+
+#: inc/views/editor/panel-settings/minimized-bar.php:17
+msgid "When close"
+msgstr ""
+
+#: inc/views/editor/panel-settings/minimized-bar.php:18
+msgid "Never"
+msgstr ""
+
+#: inc/views/editor/panel-settings/minimized-bar.php:19
+msgid "Always"
+msgstr ""
+
+#: inc/views/editor/panel-settings/minimized-bar.php:27
+#: inc/campaigns/scroll-box/panel.php:185
+#: inc/campaigns/floating-bar/panel.php:219
+msgid "Position"
+msgstr ""
+
+#: inc/views/editor/panel-settings/minimized-bar.php:31
+#: inc/campaigns/scroll-box/panel.php:192
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/views/editor/panel-settings/minimized-bar.php:32
+#: inc/campaigns/scroll-box/panel.php:191
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/views/editor/panel-settings/minimized-bar.php:33
+#: inc/campaigns/scroll-box/panel.php:190
+msgid "Top Right"
+msgstr ""
+
+#: inc/views/editor/panel-settings/minimized-bar.php:34
+#: inc/campaigns/scroll-box/panel.php:189
+msgid "Top Left"
+msgstr ""
+
+#: inc/views/editor/panel-settings/minimized-bar.php:42
+msgid "Size (px)"
+msgstr ""
+
+#: inc/views/editor/panel-settings/minimized-bar.php:51
+msgid "Select Icon"
+msgstr ""
+
+#: inc/views/editor/panel-settings/minimized-bar.php:61
+msgid "Icon Color"
+msgstr ""
+
+#: inc/views/editor/panel-settings/minimized-bar.php:70
+msgid "Minimized Bar Background Color"
+msgstr ""
+
+#: inc/views/editor/panel-settings/filters.php:11
+msgid "Logged-in users"
+msgstr ""
+
+#: inc/views/editor/panel-settings/filters.php:13
+msgid "Enable to show coupon popup for all logged-in users"
+msgstr ""
+
+#: inc/views/editor/panel-settings/filters.php:14
+#: inc/views/editor/panel-settings/filters.php:25
+#: inc/views/editor/panel-settings/filters.php:34
+#: inc/views/editor/panel-settings/woocommerce.php:26
+#: inc/views/editor/panel-settings/mailchimp.php:16
+#: inc/views/editor/panel-settings/mailchimp.php:47
+#: inc/views/editor/panel-settings/welcome-email.php:16
+msgid "Enable"
+msgstr ""
+
+#: inc/views/editor/panel-settings/filters.php:22
+msgid "Administrator"
+msgstr ""
+
+#: inc/views/editor/panel-settings/filters.php:24
+msgid "Enable to show coupon popup for administrator(s)"
+msgstr ""
+
+#: inc/views/editor/panel-settings/filters.php:33
+msgid "Hide on all articles"
+msgstr ""
+
+#: inc/views/editor/panel-settings/filters.php:43
+msgid "Show / Hide on all pages"
+msgstr ""
+
+#: inc/views/editor/panel-settings/filters.php:44
+msgid "Add the pages exluded below."
+msgstr ""
+
+#: inc/views/editor/panel-settings/filters.php:48
+msgid "Show"
+msgstr ""
+
+#: inc/views/editor/panel-settings/filters.php:49
+#: inc/campaigns/scroll-box/views/frontend/tmpl-index.php:63
+#: inc/campaigns/popup/views/frontend/tmpl-index.php:66
+#: inc/campaigns/floating-bar/views/frontend/tmpl-index.php:46
+#: inc/skins/bubble_sky/views/tmpl-scroll-box.php:69
+#: inc/skins/classic/views/tmpl-scroll-box.php:69
+#: inc/skins/fashion/views/tmpl-scroll-box.php:69
+#: inc/skins/bubble_sky_2/views/tmpl-popup.php:70
+msgid "Hide"
+msgstr ""
+
+#: inc/views/editor/panel-settings/filters.php:57
+msgid "Pages Excluded"
+msgstr ""
+
+#: inc/views/editor/panel-settings/filters.php:58
+msgid "Add the excluded pages URL's here. ex:"
+msgstr ""
+
+#: inc/views/editor/panel-settings/woocommerce.php:25
+msgid "Enable Woocommerce Coupon"
+msgstr ""
+
+#: inc/views/editor/panel-settings/woocommerce.php:27
+msgid "Enable this option if you want to offer a coupon code for your customers."
+msgstr ""
+
+#: inc/views/editor/panel-settings/woocommerce.php:29
+msgid "When your cuopon expires the lightbox popup will not show."
+msgstr ""
+
+#: inc/views/editor/panel-settings/woocommerce.php:38
+msgid "Select coupon"
+msgstr ""
+
+#: inc/views/editor/panel-settings/woocommerce.php:39
+msgid "Do not have any coupon yet?"
+msgstr ""
+
+#: inc/views/editor/panel-settings/woocommerce.php:39
+msgid "Create New One"
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:11
+msgid "Urgency Type"
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:14
+msgid "\"Visitor Session\", each visitor has urgency session time (Best)."
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:16
+msgid "Disabled"
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:17
+msgid "Visitor session"
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:18
+#: inc/views/editor/panel-settings/urgency.php:71
+msgid "Expiry date"
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:19
+msgid "Coupon usage limit"
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:30
+msgid "Session time"
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:42
+#: inc/views/editor/panel-settings/general-settings.php:73
+msgid "Minute(s)"
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:43
+#: inc/views/editor/panel-settings/general-settings.php:74
+msgid "Hour(s)"
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:44
+#: inc/views/editor/panel-settings/urgency.php:63
+#: inc/views/editor/panel-settings/general-settings.php:75
+#: inc/views/editor/panel-settings/general-settings.php:95
+#: inc/campaigns/widget-form/panel.php:122
+#: inc/campaigns/content-form/panel.php:126
+msgid "Day(s)"
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:56
+msgid "Re-create session after"
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:76
+msgid "Set expiry date."
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:84
+msgid "Coupon usage limit (Only Woocommerce)"
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:89
+msgid "Set usage limit before coupon expires."
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:96
+msgid "Font Size (px)"
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:105
+msgid "Text Color"
+msgstr ""
+
+#: inc/views/editor/panel-settings/urgency.php:114
+#: inc/campaigns/widget-form/panel.php:316
+#: inc/campaigns/content-form/panel.php:460
+#: inc/campaigns/scroll-box/panel.php:309
+#: inc/campaigns/popup/panel.php:354
+#: inc/campaigns/floating-bar/panel.php:323
+msgid "Background Color"
+msgstr ""
+
+#: inc/views/editor/panel-settings/general-settings.php:13
+#: inc/campaigns/widget-form/panel.php:103
+#: inc/campaigns/content-form/panel.php:107
+msgid "Campaign Name"
+msgstr ""
+
+#: inc/views/editor/panel-settings/general-settings.php:22
+msgid "Display trigger"
+msgstr ""
+
+#: inc/views/editor/panel-settings/general-settings.php:26
+msgid "When a visitor is about to exit."
+msgstr ""
+
+#: inc/views/editor/panel-settings/general-settings.php:27
+msgid "After X seconds."
+msgstr ""
+
+#: inc/views/editor/panel-settings/general-settings.php:28
+msgid "After scrolling down X amount."
+msgstr ""
+
+#: inc/views/editor/panel-settings/general-settings.php:29
+msgid "Random."
+msgstr ""
+
+#: inc/views/editor/panel-settings/general-settings.php:38
+msgid "Seconds"
+msgstr ""
+
+#: inc/views/editor/panel-settings/general-settings.php:41
+msgid "Set how many seconds to wait before displaying the campaign."
+msgstr ""
+
+#: inc/views/editor/panel-settings/general-settings.php:49
+msgid "Scrolling down amount (%)"
+msgstr ""
+
+#: inc/views/editor/panel-settings/general-settings.php:60
+msgid "Subscription reminder ( Not subscribe )"
+msgstr ""
+
+#: inc/views/editor/panel-settings/general-settings.php:61
+msgid "Time to show campaign again if visitor does not subscribe."
+msgstr ""
+
+#: inc/views/editor/panel-settings/general-settings.php:86
+#: inc/campaigns/widget-form/panel.php:113
+#: inc/campaigns/content-form/panel.php:117
+msgid "Subscription reminder ( subscribe )"
+msgstr ""
+
+#: inc/views/editor/panel-settings/general-settings.php:87
+#: inc/campaigns/widget-form/panel.php:114
+#: inc/campaigns/content-form/panel.php:118
+msgid "Sometime a subscriber unsubscribe. Setting a reminded after an amount of time is a smart idea."
+msgstr ""
+
+#: inc/views/editor/panel-settings/social-media.php:11
+msgid "Open Links In New Tabs"
+msgstr ""
+
+#: inc/views/editor/panel-settings/social-media.php:20
+msgid "Icons Design"
+msgstr ""
+
+#: inc/views/editor/panel-settings/social-media.php:30
+msgid "Icons Size (px)"
+msgstr ""
+
+#: inc/views/editor/panel-settings/social-media.php:39
+msgid "Social Icons Color Type"
+msgstr ""
+
+#: inc/views/editor/panel-settings/social-media.php:43
+msgid "Default Colors"
+msgstr ""
+
+#: inc/views/editor/panel-settings/social-media.php:44
+msgid "Custom Color"
+msgstr ""
+
+#: inc/views/editor/panel-settings/social-media.php:52
+msgid "Social Icons Color"
+msgstr ""
+
+#: inc/views/editor/panel-settings/social-media.php:61
+msgid "Facebook Username"
+msgstr ""
+
+#: inc/views/editor/panel-settings/social-media.php:71
+msgid "Twitter Username"
+msgstr ""
+
+#: inc/views/editor/panel-settings/social-media.php:81
+msgid "Instagram Username"
+msgstr ""
+
+#: inc/views/editor/panel-settings/social-media.php:91
+msgid "Pinterest Username"
+msgstr ""
+
+#: inc/views/editor/panel-settings/social-media.php:101
+msgid "Linkedin Username"
+msgstr ""
+
+#: inc/views/editor/panel-settings/social-media.php:111
+msgid "Youtube URL"
+msgstr ""
+
+#: inc/views/editor/panel-settings/mailchimp.php:13
+msgid "Enable Mailchimp"
+msgstr ""
+
+#: inc/views/editor/panel-settings/mailchimp.php:23
+#: inc/views/editor/panel-settings/mailchimp.php:24
+msgid "API Key"
+msgstr ""
+
+#: inc/views/editor/panel-settings/mailchimp.php:24
+msgid "Get your API key from here:"
+msgstr ""
+
+#: inc/views/editor/panel-settings/mailchimp.php:33
+msgid "Lists"
+msgstr ""
+
+#: inc/views/editor/panel-settings/mailchimp.php:34
+msgid "Lists are where you store your subscriber’s information."
+msgstr ""
+
+#: inc/views/editor/panel-settings/mailchimp.php:37
+#: inc/class-ajax.php:69
+msgid "Select List"
+msgstr ""
+
+#: inc/views/editor/panel-settings/mailchimp.php:44
+msgid "Enable Campaign"
+msgstr ""
+
+#: inc/views/editor/panel-settings/mailchimp.php:54
+msgid "Campaign API URL"
+msgstr ""
+
+#: inc/views/editor/panel-settings/mailchimp.php:55
+msgid "Check out the documentation if you do not know where to get this url from."
+msgstr ""
+
+#: inc/views/editor/panel-settings/welcome-email.php:11
+msgid "Send Email When Subscribe"
+msgstr ""
+
+#: inc/views/editor/panel-settings/welcome-email.php:12
+msgid "It will be sent automatically after a visitor subscribe."
+msgstr ""
+
+#: inc/views/editor/panel-settings/welcome-email.php:13
+msgid "Useful when offering a coupon code or something to download."
+msgstr ""
+
+#: inc/views/editor/panel-settings/welcome-email.php:23
+msgid "Subject"
+msgstr ""
+
+#: inc/views/editor/panel-settings/welcome-email.php:32
+msgid "Content"
+msgstr ""
+
+#: inc/views/editor/panel-settings/welcome-email.php:37
+msgid "Fixed value or percentage, depending on discount type you have chosen."
+msgstr ""
+
+#: inc/views/editor/panel-settings/welcome-email.php:38
+msgid "Code used by the customer to apply the coupon."
+msgstr ""
+
+#: inc/views/editor/panel-settings/welcome-email.php:39
+msgid "Date the coupon should expire and can no longer be used."
+msgstr ""
+
+#: inc/views/editor/panel-settings/welcome-email.php:40
+msgid "When clicked customers will be redirected to your shop."
+msgstr ""
+
+#: inc/views/preview/wrapper.php:30
+msgid "Skytake Preview"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:14
+#: inc/campaigns/content-form/panel.php:14
+#: inc/campaigns/scroll-box/panel.php:14
+#: inc/campaigns/popup/panel.php:14
+#: inc/campaigns/floating-bar/panel.php:12
+msgid "Setup"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:18
+#: inc/campaigns/content-form/panel.php:18
+#: inc/campaigns/scroll-box/panel.php:18
+#: inc/campaigns/popup/panel.php:18
+#: inc/campaigns/floating-bar/panel.php:16
+msgid "General Settings"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:23
+#: inc/campaigns/content-form/panel.php:23
+#: inc/campaigns/scroll-box/panel.php:23
+#: inc/campaigns/popup/panel.php:23
+#: inc/campaigns/floating-bar/panel.php:21
+msgid "Welcome Email"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:28
+#: inc/campaigns/content-form/panel.php:28
+#: inc/campaigns/scroll-box/panel.php:28
+#: inc/campaigns/popup/panel.php:28
+#: inc/campaigns/floating-bar/panel.php:26
+msgid "Filters"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:34
+#: inc/campaigns/content-form/panel.php:34
+#: inc/campaigns/scroll-box/panel.php:34
+#: inc/campaigns/popup/panel.php:34
+#: inc/campaigns/floating-bar/panel.php:32
+msgid "Optin / Success"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:38
+#: inc/campaigns/content-form/panel.php:38
+#: inc/campaigns/scroll-box/panel.php:38
+#: inc/campaigns/popup/panel.php:38
+#: inc/campaigns/floating-bar/panel.php:36
+msgid "Templates"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:43
+#: inc/campaigns/content-form/panel.php:43
+#: inc/campaigns/scroll-box/panel.php:43
+#: inc/campaigns/popup/panel.php:43
+#: inc/campaigns/floating-bar/panel.php:41
+msgid "Optin"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:48
+#: inc/campaigns/content-form/panel.php:48
+#: inc/campaigns/scroll-box/panel.php:48
+#: inc/campaigns/popup/panel.php:48
+#: inc/campaigns/floating-bar/panel.php:46
+msgid "Success"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:53
+#: inc/campaigns/content-form/panel.php:53
+#: inc/campaigns/scroll-box/panel.php:53
+#: inc/campaigns/popup/panel.php:53
+#: inc/campaigns/floating-bar/panel.php:51
+msgid "Style"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:59
+#: inc/campaigns/content-form/panel.php:59
+#: inc/campaigns/scroll-box/panel.php:59
+#: inc/campaigns/popup/panel.php:59
+#: inc/campaigns/floating-bar/panel.php:57
+msgid "Features"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:63
+#: inc/campaigns/content-form/panel.php:68
+#: inc/campaigns/scroll-box/panel.php:68
+#: inc/campaigns/popup/panel.php:68
+msgid "Social Media"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:74
+#: inc/campaigns/content-form/panel.php:79
+#: inc/campaigns/scroll-box/panel.php:79
+#: inc/campaigns/popup/panel.php:79
+#: inc/campaigns/floating-bar/panel.php:72
+msgid "Integrations"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:78
+#: inc/campaigns/content-form/panel.php:83
+#: inc/campaigns/scroll-box/panel.php:83
+#: inc/campaigns/popup/panel.php:83
+#: inc/campaigns/floating-bar/panel.php:76
+msgid "Woocommerce"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:83
+#: inc/campaigns/content-form/panel.php:88
+#: inc/campaigns/scroll-box/panel.php:88
+#: inc/campaigns/popup/panel.php:88
+#: inc/campaigns/floating-bar/panel.php:81
+msgid "Mailchimp"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:133
+#: inc/campaigns/content-form/panel.php:137
+#: inc/campaigns/scroll-box/panel.php:111
+#: inc/campaigns/popup/panel.php:110
+#: inc/campaigns/floating-bar/panel.php:101
+msgid "Select Template"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:139
+#: inc/campaigns/content-form/panel.php:143
+#: inc/campaigns/scroll-box/panel.php:117
+#: inc/campaigns/popup/panel.php:116
+#: inc/campaigns/floating-bar/panel.php:107
+msgid "Classic"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:143
+#: inc/campaigns/content-form/panel.php:147
+#: inc/campaigns/scroll-box/panel.php:121
+#: inc/campaigns/popup/panel.php:120
+#: inc/campaigns/floating-bar/panel.php:111
+msgid "Bubble Sky"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:188
+#: inc/campaigns/scroll-box/panel.php:166
+#: inc/campaigns/popup/panel.php:212
+#: inc/campaigns/floating-bar/panel.php:200
+msgid "Display Animation"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:192
+#: inc/campaigns/scroll-box/panel.php:170
+#: inc/campaigns/popup/panel.php:216
+#: inc/campaigns/floating-bar/panel.php:204
+#: inc/functions.php:92
+#: inc/functions.php:120
+msgid "None"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:193
+#: inc/campaigns/scroll-box/panel.php:171
+#: inc/campaigns/popup/panel.php:217
+#: inc/campaigns/floating-bar/panel.php:205
+msgid "Fade"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:194
+#: inc/campaigns/scroll-box/panel.php:172
+#: inc/campaigns/popup/panel.php:218
+#: inc/campaigns/floating-bar/panel.php:206
+msgid "Scale out"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:195
+#: inc/campaigns/scroll-box/panel.php:173
+#: inc/campaigns/popup/panel.php:219
+#: inc/campaigns/floating-bar/panel.php:207
+msgid "Scale in"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:196
+#: inc/campaigns/scroll-box/panel.php:174
+#: inc/campaigns/popup/panel.php:220
+#: inc/campaigns/floating-bar/panel.php:208
+msgid "Slide in from top"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:197
+#: inc/campaigns/scroll-box/panel.php:175
+#: inc/campaigns/popup/panel.php:221
+#: inc/campaigns/floating-bar/panel.php:209
+msgid "Slide in from bottom"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:198
+#: inc/campaigns/scroll-box/panel.php:176
+#: inc/campaigns/popup/panel.php:222
+#: inc/campaigns/floating-bar/panel.php:210
+msgid "Slide in from right"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:199
+#: inc/campaigns/scroll-box/panel.php:177
+#: inc/campaigns/popup/panel.php:223
+#: inc/campaigns/floating-bar/panel.php:211
+msgid "Slide in from left"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:207
+#: inc/campaigns/content-form/panel.php:351
+#: inc/campaigns/scroll-box/panel.php:200
+#: inc/campaigns/popup/panel.php:245
+#: inc/campaigns/floating-bar/panel.php:232
+msgid "Font Family"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:217
+#: inc/campaigns/content-form/panel.php:361
+#: inc/campaigns/scroll-box/panel.php:210
+#: inc/campaigns/popup/panel.php:255
+#: inc/campaigns/floating-bar/panel.php:242
+msgid "Title Font Size (px)"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:226
+#: inc/campaigns/content-form/panel.php:370
+#: inc/campaigns/scroll-box/panel.php:219
+#: inc/campaigns/popup/panel.php:264
+#: inc/campaigns/floating-bar/panel.php:251
+msgid "Title Color"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:235
+#: inc/campaigns/content-form/panel.php:379
+#: inc/campaigns/scroll-box/panel.php:228
+#: inc/campaigns/popup/panel.php:273
+msgid "Body Font Size (px)"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:244
+#: inc/campaigns/content-form/panel.php:388
+#: inc/campaigns/scroll-box/panel.php:237
+#: inc/campaigns/popup/panel.php:282
+msgid "Body Text Color"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:253
+#: inc/campaigns/content-form/panel.php:397
+#: inc/campaigns/scroll-box/panel.php:246
+#: inc/campaigns/popup/panel.php:300
+#: inc/campaigns/floating-bar/panel.php:260
+msgid "Email Input Text Color"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:262
+#: inc/campaigns/content-form/panel.php:406
+#: inc/campaigns/scroll-box/panel.php:255
+#: inc/campaigns/popup/panel.php:309
+#: inc/campaigns/floating-bar/panel.php:269
+msgid "Email Input Background Color"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:271
+#: inc/campaigns/content-form/panel.php:415
+#: inc/campaigns/scroll-box/panel.php:264
+#: inc/campaigns/floating-bar/panel.php:278
+msgid "Email Input Font Size (px)"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:280
+#: inc/campaigns/content-form/panel.php:424
+#: inc/campaigns/scroll-box/panel.php:273
+#: inc/campaigns/popup/panel.php:318
+#: inc/campaigns/floating-bar/panel.php:287
+msgid "Button Color"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:289
+#: inc/campaigns/content-form/panel.php:433
+#: inc/campaigns/scroll-box/panel.php:282
+#: inc/campaigns/popup/panel.php:327
+#: inc/campaigns/floating-bar/panel.php:296
+msgid "Button Background color"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:298
+#: inc/campaigns/content-form/panel.php:442
+#: inc/campaigns/scroll-box/panel.php:291
+#: inc/campaigns/popup/panel.php:336
+#: inc/campaigns/floating-bar/panel.php:305
+msgid "Close Icon Color"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:307
+#: inc/campaigns/content-form/panel.php:451
+#: inc/campaigns/scroll-box/panel.php:300
+#: inc/campaigns/popup/panel.php:345
+#: inc/campaigns/floating-bar/panel.php:314
+msgid "Close Icon Background Color"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:325
+#: inc/campaigns/content-form/panel.php:469
+#: inc/campaigns/scroll-box/panel.php:318
+#: inc/campaigns/popup/panel.php:363
+#: inc/campaigns/floating-bar/panel.php:332
+msgid "Background Image"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:335
+#: inc/campaigns/content-form/panel.php:479
+#: inc/campaigns/scroll-box/panel.php:328
+#: inc/campaigns/popup/panel.php:373
+#: inc/campaigns/floating-bar/panel.php:342
+msgid "Background Image Position"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:355
+#: inc/campaigns/content-form/panel.php:499
+#: inc/campaigns/scroll-box/panel.php:348
+#: inc/campaigns/popup/panel.php:393
+#: inc/campaigns/floating-bar/panel.php:362
+msgid "Background Image Size"
+msgstr ""
+
+#: inc/campaigns/widget-form/panel.php:370
+#: inc/campaigns/content-form/panel.php:514
+#: inc/campaigns/scroll-box/panel.php:363
+#: inc/campaigns/popup/panel.php:408
+#: inc/campaigns/floating-bar/panel.php:377
+msgid "Background Image Repeat"
+msgstr ""
+
+#: inc/campaigns/content-form/views/frontend/urgency__premium_only.php:6
+#: inc/campaigns/popup/views/frontend/urgency__premium_only.php:4
+msgid "9999 Coupons Left"
+msgstr ""
+
+#: inc/campaigns/content-form/views/frontend/urgency__premium_only.php:12
+#: inc/campaigns/popup/views/frontend/urgency__premium_only.php:11
+msgid "D"
+msgstr ""
+
+#: inc/campaigns/content-form/views/frontend/urgency__premium_only.php:17
+#: inc/campaigns/popup/views/frontend/urgency__premium_only.php:16
+msgid "HR"
+msgstr ""
+
+#: inc/campaigns/content-form/views/frontend/urgency__premium_only.php:22
+#: inc/campaigns/popup/views/frontend/urgency__premium_only.php:21
+msgid "MS"
+msgstr ""
+
+#: inc/campaigns/content-form/views/frontend/urgency__premium_only.php:27
+#: inc/campaigns/popup/views/frontend/urgency__premium_only.php:26
+msgid "SEC"
+msgstr ""
+
+#: inc/campaigns/content-form/panel.php:63
+#: inc/campaigns/scroll-box/panel.php:63
+#: inc/campaigns/popup/panel.php:63
+#: inc/campaigns/floating-bar/panel.php:61
+#: inc/class-campaign-list-table.php:136
+msgid "Minimized Bar"
+msgstr ""
+
+#: inc/campaigns/content-form/panel.php:188
+msgid "Side Image"
+msgstr ""
+
+#: inc/campaigns/content-form/panel.php:323
+#: inc/campaigns/popup/panel.php:193
+msgid "Layout"
+msgstr ""
+
+#: inc/campaigns/content-form/panel.php:328
+#: inc/campaigns/popup/panel.php:198
+msgid "Left"
+msgstr ""
+
+#: inc/campaigns/content-form/panel.php:332
+#: inc/campaigns/popup/panel.php:202
+msgid "Right"
+msgstr ""
+
+#: inc/campaigns/content-form/panel.php:342
+#: inc/campaigns/popup/panel.php:236
+msgid "Overlay Color"
+msgstr ""
+
+#: inc/campaigns/popup/panel.php:124
+msgid "Bubble Sky Vertical"
+msgstr ""
+
+#: inc/campaigns/popup/panel.php:224
+msgid "Spin"
+msgstr ""
+
+#: inc/campaigns/popup/panel.php:225
+msgid "3D: Rotate from top"
+msgstr ""
+
+#: inc/campaigns/popup/panel.php:226
+msgid "3D: Rotate from bottom"
+msgstr ""
+
+#: inc/campaigns/popup/panel.php:227
+msgid "3D: Rotate from right"
+msgstr ""
+
+#: inc/campaigns/popup/panel.php:228
+msgid "3D: Rotate from left"
+msgstr ""
+
+#: inc/campaigns/popup/panel.php:291
+msgid "Inputs/Submit Font Size (px)"
+msgstr ""
+
+#: inc/campaigns/floating-bar/panel.php:223
+msgid "Top"
+msgstr ""
+
+#: inc/campaigns/floating-bar/panel.php:224
+msgid "Bottom"
+msgstr ""
+
+#: inc/class-editor.php:155
+msgid "Invalid Campaign"
+msgstr ""
+
+#: inc/functions.php:14
+msgid "Upgrade(Soon)"
+msgstr ""
+
+#: inc/functions.php:203
+msgid "Coupon List"
+msgstr ""
+
+#: inc/functions.php:260
+msgid "%"
+msgstr ""
+
+#: inc/functions.php:535
+msgid "Invalid Mailchimp API key."
+msgstr ""
+
+#: inc/functions.php:569
+#: inc/functions.php:608
+msgid "Invalid email address."
+msgstr ""
+
+#: inc/functions.php:573
+msgid "Invalid Mailchimp list id."
+msgstr ""
+
+#: inc/functions.php:614
+#: inc/functions.php:618
+msgid "Invalid Mailchimp campaign url."
+msgstr ""
+
+#: inc/class-backend.php:56
+msgid "Are you sure?"
+msgstr ""
+
+#: inc/class-backend.php:57
+msgid "Are you sure? activating this campaign will deactivate any active campain with the same type."
+msgstr ""
+
+#: inc/class-backend.php:98
+msgid "skytake Campaigns"
+msgstr ""
+
+#: inc/class-backend.php:99
+#: inc/class-backend.php:167
+#: inc/class-campaign-list-table.php:15
+msgid "Campaigns"
+msgstr ""
+
+#: inc/class-backend.php:127
+#: inc/class-backend.php:128
+msgid "Get Support"
+msgstr ""
+
+#: inc/class-backend.php:169
+msgid "Add New"
+msgstr ""
+
+#: inc/class-backend.php:199
+msgid "Select Campaign Type"
+msgstr ""
+
+#: inc/class-backend.php:206
+msgid "Create"
+msgstr ""
+
+#: inc/class-backend.php:207
+msgid "Close"
+msgstr ""
+
+#: inc/class-backend.php:234
+msgid "Export All"
+msgstr ""
+
+#: inc/class-backend.php:262
+msgid "Export all emails to CSV"
+msgstr ""
+
+#: inc/class-backend.php:263
+msgid "Leave start date empty to export all emails."
+msgstr ""
+
+#: inc/class-backend.php:268
+msgid "Start date"
+msgstr ""
+
+#: inc/class-backend.php:270
+msgid "Export Now"
+msgstr ""
+
+#: inc/class-backend.php:329
+msgid "Please activate one of your Skytake campaigns."
+msgstr ""
+
+#: inc/class-backend.php:357
+msgid "Hi there! you have been using <strong>Skytake Leads & Sales</strong> for few days. I hope it is helpful."
+msgstr ""
+
+#: inc/class-backend.php:361
+msgid "Would you mind give it 5-stars review to help spread the word? And to keep me updating it & adding more features to it!"
+msgstr ""
+
+#: inc/class-backend.php:363
+msgid "Would you want to get awesome features?"
+msgstr ""
+
+#: inc/class-backend.php:423
+msgid "Skytake Purchase Validation"
+msgstr ""
+
+#: inc/class-backend.php:428
+msgid "Email Address"
+msgstr ""
+
+#: inc/class-backend.php:429
+msgid "Codecanyon Purchase Code"
+msgstr ""
+
+#: inc/class-backend.php:433
+msgid "I agree with the <a href=\"https://delabon.com/terms\" target=\"_blank\">terms</a> and <a href=\"https://delabon.com/privacy-policy\" target=\"_blank\">privacy policy</a>."
+msgstr ""
+
+#: inc/class-backend.php:436
+msgid "Validate"
+msgstr ""
+
+#: inc/config.php:21
+msgid "Use theme font"
+msgstr ""
+
+#: inc/config.php:36
+msgid "Select Type"
+msgstr ""
+
+#: inc/config.php:37
+msgid "Lightbox Popup"
+msgstr ""
+
+#: inc/config.php:38
+msgid "Floating Bar"
+msgstr ""
+
+#: inc/config.php:39
+msgid "Slide-in Scroll Box"
+msgstr ""
+
+#: inc/config.php:40
+msgid "Widget Form"
+msgstr ""
+
+#: inc/config.php:41
+msgid "Form Inside Content"
+msgstr ""
+
+#: inc/class-ajax.php:99
+msgid "Invalid Email"
+msgstr ""
+
+#: inc/class-ajax.php:103
+msgid "Invalid Purchase Code"
+msgstr ""
+
+#: inc/class-ajax.php:442
+msgid "Invalid Camapaign."
+msgstr ""
+
+#: inc/class-ajax.php:446
+msgid "Invalid Email."
+msgstr ""
+
+#: inc/class-ajax.php:555
+msgid "Shop Now"
+msgstr ""
+
+#: inc/class-campaign-list-table.php:61
 msgid "No campaigns avaliable."
 msgstr ""
 
-#: lib/class-campaign-list-table.php:71
+#: inc/class-campaign-list-table.php:71
 msgid "Name"
 msgstr ""
 
-#: lib/class-campaign-list-table.php:72
+#: inc/class-campaign-list-table.php:72
+msgid "Type"
+msgstr ""
+
+#: inc/class-campaign-list-table.php:73
 msgid "Status"
 msgstr ""
 
-#: lib/class-campaign-list-table.php:73
+#: inc/class-campaign-list-table.php:74
 msgid "Tags"
 msgstr ""
 
-#: lib/class-campaign-list-table.php:74
+#: inc/class-campaign-list-table.php:75
 msgid "Statistics"
 msgstr ""
 
-#: lib/class-campaign-list-table.php:99
+#: inc/class-campaign-list-table.php:100
 msgid "Edit"
 msgstr ""
 
-#: lib/class-campaign-list-table.php:100
+#: inc/class-campaign-list-table.php:101
 msgid "Duplicate"
 msgstr ""
 
-#: lib/class-campaign-list-table.php:101
+#: inc/class-campaign-list-table.php:102
 msgid "Delete"
 msgstr ""
 
-#: lib/class-campaign-list-table.php:157
+#: inc/class-campaign-list-table.php:129
+msgid "Urgency"
+msgstr ""
+
+#: inc/class-campaign-list-table.php:145
+msgid "Always enabled"
+msgstr ""
+
+#: inc/class-campaign-list-table.php:170
 msgid "Views"
 msgstr ""
 
-#: lib/class-campaign-list-table.php:158
+#: inc/class-campaign-list-table.php:171
 msgid "Conversions"
 msgstr ""
 
-#: lib/class-campaign-list-table.php:159
+#: inc/class-campaign-list-table.php:172
 msgid "Conversion Rate"
+msgstr ""
+
+#: assets/js/gutenberg.js:30
+msgid "Select Campaign"
 msgstr ""

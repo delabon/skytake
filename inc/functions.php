@@ -649,6 +649,7 @@ function generate_css( $id, $type, $settings ){
  */
 function generate_common_css( $id, $settings ){
 
+    $css = '';
     $data = $settings;
     $body_bg_image = $data['body_bg_image'];
 
@@ -656,11 +657,15 @@ function generate_common_css( $id, $settings ){
         $body_bg_image = 'url('. $body_bg_image .')'; 
     }
 
-    return '
-        .skytake-overlay[data-target="'.$id.'"]{
-            background-color: '.esc_attr($data['overlay_color']).';
-        }
-
+    if( $data['font_family'] !== 'theme_font' ){
+        $css .= '
+            #skytake-'.$id.'{
+                font-family: '. skytake()->defaultConfig['fonts'][ $data['font_family'] ][1] .';
+            }
+        ';
+    }
+        
+    $css .= '
         #skytake-'.$id.' .skytake-container{
             background-color: '.esc_attr( $data['body_bg_color'] ).';
             background-image: '.esc_attr( $body_bg_image ).';
@@ -690,15 +695,14 @@ function generate_common_css( $id, $settings ){
             color: '.esc_attr( $data['close_icon_color']).';
         }
 
-        #skytake-'.$id.' .skytake-name,
-        #skytake-'.$id.' .skytake-email,
-        #skytake-'.$id.' .skytake-mobile{
+        #skytake-'.$id.' input[type="email"],
+        #skytake-'.$id.' input[type="text"]{
             font-size: '.esc_attr( $data['input_font_size']).'px;
             color: '.esc_attr( $data['email_color']).';
             background-color: '.esc_attr( $data['email_bg_color']).';
         }
 
-        #skytake-'.$id.' .skytake-submit{
+        #skytake-'.$id.' button.skytake-submit{
             font-size: '.esc_attr( $data['input_font_size']).'px;
             color: '.esc_attr( $data['submit_color']).';
             background-color: '.esc_attr( $data['submit_bg_color']).';
@@ -721,6 +725,10 @@ function generate_common_css( $id, $settings ){
             background-color: '.esc_attr( $data['urgency_bg_color']).';   
         }
 
+        .skytake-overlay[data-target="'.$id.'"]{
+            background-color: '.esc_attr($data['overlay_color']).';
+        }
+
         .skytake-bar[data-target="'.$id.'"]{
             background-color: '.esc_attr( $data['minimized_bar_bg_color']).';            
         }
@@ -732,4 +740,6 @@ function generate_common_css( $id, $settings ){
         }
 
     ';
+
+    return $css;
 }
