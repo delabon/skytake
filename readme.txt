@@ -65,7 +65,7 @@ No, Skytake works out of the box with any WordPress / WooCommerce themes.
 
 = Where can I find the documentation? =
 
-You can read the documentation on our website from here: https://delabon.com/docs.
+You can read the documentation on our website from here: https://delabon.com/knowledge-base/28 .
 
 = Can I get support? =
 

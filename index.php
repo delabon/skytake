@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) or die( 'Mmmmm Funny ?' );
 define( 'SKYTAKE_VERSION', '0.34.0' );
 define( 'SKYTAKE_URL', plugins_url( '',__FILE__) );
 define( 'SKYTAKE_PATH', __DIR__ );
-define( 'SKYTAKE_DOC_URL', 'https://delabon.com/docs' );
+define( 'SKYTAKE_DOC_URL', 'https://delabon.com/knowledge-base/28' );
 define( 'SKYTAKE_PLUGINS_URL', 'https://delabon.com/store' );
 define( 'SKYTAKE_SUPPORT_URL', 'https://delabon.com/support' );
 define( 'SKYTAKE_UPGRADE_URL', '#' );
