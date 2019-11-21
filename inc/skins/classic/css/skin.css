@@ -1,0 +1,230 @@
+/*************************************************
+ * Common
+*************************************************/
+
+/*************************************************
+ * Popup
+*************************************************/
+.skytake-popup[data-template="classic"] .skytake-container{
+    width: 650px;
+}
+
+.skytake-popup[data-template="classic"] .skytake-content{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.skytake-popup[data-template="classic"] .skytake-box-one{
+    display: none !important;
+}
+
+.skytake-popup[data-template="classic"] .skytake-box-two{
+    width: 100%;
+    max-width: 100%;
+}
+
+.skytake-popup[data-template="classic"] input[type="email"]{
+    width: 350px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.skytake-popup[data-template="classic"] .skytake-submit{
+    display: inline-block;
+    width: 150px;
+}
+
+.skytake-popup[data-template="classic"] .skytake-spam{
+    clear: both;
+}
+
+/** Breakpoints */
+@media all and (max-width: 680px) {
+
+    .skytake-popup[data-template="classic"] .skytake-container{
+        width: 400px;
+    }
+
+    .skytake-popup[data-template="classic"] .skytake-submit,
+    .skytake-popup[data-template="classic"] input[type="text"],
+    .skytake-popup[data-template="classic"] input[type="email"]{
+        padding: 7px 16px;
+        width: 100%;
+    }    
+
+    .skytake-popup[data-template="classic"] .skytake-submit,
+    .skytake-popup[data-template="classic"] input[type="email"]{
+        display: block;
+    }
+
+    .skytake-popup[data-template="classic"] input[type="email"]{
+        margin: 0 auto 15px;
+    }
+}
+
+@media all and (max-width: 430px) {
+    .skytake-popup[data-template="classic"] .skytake-container{
+        width: 300px;
+    }
+}
+
+
+/*************************************************
+ * Floating Bar
+*************************************************/
+.skytake-floating-bar[data-template="classic"] .skytake-submit,
+.skytake-floating-bar[data-template="classic"] input[type="text"],
+.skytake-floating-bar[data-template="classic"] input[type="email"]{
+    padding: 7px 16px;
+}
+
+@media all and (max-width: 768px) {
+
+    .skytake-floating-bar[data-template="classic"] .skytake-view{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .skytake-floating-bar[data-template="classic"] .skytake-form{
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        margin-top: 10px;
+    }
+
+}
+
+
+/*************************************************
+ * Scroll Box
+*************************************************/
+.skytake-scroll-box[data-template="classic"] .skytake-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.skytake-scroll-box[data-template="classic"] .skytake-box-one{
+    display: none !important;
+}
+
+.skytake-scroll-box[data-template="classic"] .skytake-submit,
+.skytake-scroll-box[data-template="classic"] input[type="text"],
+.skytake-scroll-box[data-template="classic"] input[type="email"]{
+    padding: 7px 16px;
+}
+
+/*************************************************
+ * Widget Form
+*************************************************/
+.skytake-widget-form[data-template="classic"] .skytake-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.skytake-widget-form[data-template="classic"] .skytake-box-one{
+    display: none !important;
+}
+
+.skytake-widget-form[data-template="classic"][data-mainimage="0"] .skytake-content{
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.skytake-widget-form[data-template="classic"] .skytake-submit,
+.skytake-widget-form[data-template="classic"] input[type="text"],
+.skytake-widget-form[data-template="classic"] input[type="email"]{
+    padding: 7px 16px;
+}
+
+
+/*************************************************
+ * Content Form
+*************************************************/
+.skytake-content-form[data-template="classic"] {
+    margin: 40px 0;
+}
+
+.skytake-content-form[data-template="classic"] .skytake-content{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.skytake-content-form[data-template="classic"] .skytake-box-one{
+    display: none !important;
+}
+
+.skytake-content-form[data-template="classic"] .skytake-box-two{
+    width: 100%;
+    max-width: 100%;
+}
+
+.skytake-content-form[data-template="classic"] input[type="email"]{
+    width: 350px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.skytake-content-form[data-template="classic"] .skytake-submit{
+    display: inline-block;
+    width: 150px;
+}
+
+.skytake-content-form[data-template="classic"] .skytake-spam{
+    clear: both;
+}
+
+/** Breakpoints */
+@media all and (max-width: 680px) {
+
+    .skytake-content-form[data-template="classic"] .skytake-container{
+        width: 400px;
+    }
+
+    .skytake-content-form[data-template="classic"] .skytake-submit,
+    .skytake-content-form[data-template="classic"] input[type="text"],
+    .skytake-content-form[data-template="classic"] input[type="email"]{
+        padding: 7px 16px;
+        width: 100%;
+    }    
+
+    .skytake-content-form[data-template="classic"] .skytake-submit,
+    .skytake-content-form[data-template="classic"] input[type="email"]{
+        display: block;
+    }
+
+    .skytake-content-form[data-template="classic"] input[type="email"]{
+        margin: 0 auto 15px;
+    }
+}
+
+@media all and (max-width: 430px) {
+    .skytake-content-form[data-template="classic"] .skytake-container{
+        width: 300px;
+    }
+}

@@ -1,0 +1,67 @@
+/*************************************************
+ * Common
+*************************************************/
+.skytake[data-template="bubble_sky_2"] .skytake-submit,
+.skytake[data-template="bubble_sky_2"] input[type="text"],
+.skytake[data-template="bubble_sky_2"] input[type="email"]{
+    border-radius: 8px;
+    padding: 7px 16px;
+}
+
+.skytake[data-template="bubble_sky_2"] .skytake-urgency-usage-limit > div,
+.skytake[data-template="bubble_sky_2"] .skytake-urgency-timer > div {
+    border-radius: 8px;
+}
+
+/*************************************************
+ * Popup
+*************************************************/
+.skytake-popup[data-template="bubble_sky_2"] .skytake-container{
+    border-radius: 8px;
+    width: 400px;
+}
+
+.skytake-popup[data-template="bubble_sky_2"] .skytake-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.skytake-popup[data-template="bubble_sky_2"][data-mainimage="0"] .skytake-content{
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.skytake-popup[data-template="bubble_sky_2"] .skytake-box-one{
+    position: relative;
+    display: block;
+    height: auto;
+    width: 100%;
+    background-position: 50% 30%;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.skytake-popup[data-template="bubble_sky_2"] .skytake-box-one img{
+    margin:0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.skytake-popup[data-template="bubble_sky_2"][data-mainimage="0"] .skytake-box-one{
+    display: none !important;
+}
+
+/** Breakpoints */
+@media all and (max-width: 430px) {
+    .skytake-popup[data-template="bubble_sky_2"] .skytake-container{
+        width: 300px;
+    }
+}
