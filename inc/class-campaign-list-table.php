@@ -130,7 +130,7 @@ class Campaign_List_table extends List_Table {
                                 </span>';
                 }
 
-                if( $item['c_settings']['urgency_type'] != 'never' ){
+                if( $item['c_settings']['display_minimized_bar'] != 'never' ){
                     $output .= '<span class="skytake_tag __green">
                                     <span class="dashicons dashicons-yes"></span>
                                     '.__('Minimized Bar', 'skytake').'

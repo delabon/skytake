@@ -59,11 +59,6 @@ $panel->add_panel( 'features', [
     'title' => __( 'Features', 'skytake'),
 ]);
 
-$panel->add_section( 'minimized_bar', [
-    'title' => __('Minimized Bar', 'skytake'),
-    'panel' => 'features',
-]);
-
 $panel->add_section( 'social_media', [
     'title' => __('Social Media', 'skytake'),
     'panel' => 'features',
@@ -91,7 +86,6 @@ $panel->add_section( 'mailchimp', [
 
 require_once SKYTAKE_PATH . '/inc/views/editor/panel-settings/welcome-email.php';
 require_once SKYTAKE_PATH . '/inc/views/editor/panel-settings/filters.php';
-require_once SKYTAKE_PATH . '/inc/views/editor/panel-settings/minimized-bar.php';
 // require_once SKYTAKE_PATH . '/inc/views/editor/panel-settings/urgency.php';
 require_once SKYTAKE_PATH . '/inc/views/editor/panel-settings/social-media.php';
 require_once SKYTAKE_PATH . '/inc/views/editor/panel-settings/woocommerce.php';

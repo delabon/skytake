@@ -45,7 +45,6 @@ class Content_Form extends Campaign_UI{
             'is_editor_mode'            => FALSE,
             'last_settings_update'      => $campaign->change_token(),
             'campaign_markup'           => $this->get_markup( $campaign, false ),
-            'minimized_bar_markup'      => $this->get_minimized_bar_markup( $campaign ), 
             'display_trigger'           => $campaign->setting('display_trigger'),
             'display_trigger_after'     => $campaign->setting('display_after_x_seconds'),
             'display_minimized_bar'     => $campaign->setting('display_minimized_bar'),
@@ -77,7 +76,6 @@ class Content_Form extends Campaign_UI{
             'campaign_hash'         => $campaign->id() .'_'. md5( get_home_url() ),
             'is_editor_mode'        => TRUE,
             'campaign_markup'       => $this->get_markup( $campaign, TRUE, $skin ),
-            'minimized_bar_markup'  => $this->get_minimized_bar_markup( $campaign ), 
             'urgency_type'          => $campaign->setting('urgency_type'),
         );
     }
